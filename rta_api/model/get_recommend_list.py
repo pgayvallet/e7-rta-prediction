@@ -1,5 +1,6 @@
 import pydantic
 
+
 class GetRecommendListResponseList(pydantic.BaseModel):
     regDate: str
     seasonCode: str

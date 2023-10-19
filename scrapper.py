@@ -1,14 +1,16 @@
 import asyncio
 import aiohttp
-import random
+from typing import TypedDict
 import time
-
-base_url = "https://epic7.gg.onstove.com/gameApi"
-
-from rta_api import get_recommended_list
+import rta_api
 
 
-async def worker(name, queue):
+class UserInfo(TypedDict):
+    user_id: int
+    world_code: str
+
+
+async def worker(name, queue, userDict):
     async with aiohttp.ClientSession() as session:
         while True:
             # Get a "work item" out of the queue.
@@ -16,9 +18,41 @@ async def worker(name, queue):
 
             print(f'{name} - received task {task}')
 
-            response = await get_recommended_list(session)
+            match task["action"]:
+                case "fetch_recommend_list":
+                    response = await rta_api.get_recommended_list(session)
+                    for player in response.recommend_list:
+                        player_id_str = f'{player.nick_no}-{player.world_code}'
+                        if userDict.get(player_id_str) is None:
+                            print(f'{name} - adding player {player.nick_no} - {player.world_code}')
+                            await queue.put({
+                                "action": "fetch_battle_list",
+                                "user_id": player.nick_no,
+                                "world_code": player.world_code
+                            })
+                            # TODO: properly add to userDict
+                            userDict[player_id_str] = "FILLED"
+                        else:
+                            print(f'{name} - player {player.nick_no} - {player.world_code} - already processed')
 
-            print(f'{name} - task done {response.recommend_list[0].nick_no}')
+
+                case "fetch_battle_list":
+                    response = await rta_api.get_battle_list(session, user_id=task["user_id"], world_code=task["world_code"])
+                    for battle in response.result_body.battle_list:
+                        player_id_str = f'{battle.matchPlayerNicknameno}-{battle.enemy_world_code}'
+                        if userDict.get(player_id_str) is None:
+                            print(f'{name} - adding player {battle.matchPlayerNicknameno} - {battle.enemy_world_code}')
+                            await queue.put({
+                                "action": "fetch_battle_list",
+                                "user_id": battle.matchPlayerNicknameno,
+                                "world_code": battle.enemy_world_code,
+                            })
+                            # TODO: properly add to userDict
+                            userDict[player_id_str] = "FILLED"
+                        else:
+                            print(f'{name} - player {battle.matchPlayerNicknameno} - {battle.enemy_world_code} - already processed')
+
+            print(f'{name} - task done')
 
             # Notify the queue that the "work item" has been processed.
             queue.task_done()
@@ -28,33 +62,31 @@ async def main():
     # Create a queue that we will use to store our "workload".
     queue = asyncio.Queue()
 
-    # Generate random timings and put them into the queue.
-    total_sleep_time = 0
-    for _ in range(20):
+    userDict: dict[str, UserInfo] = {}
+    userDict["foo"] = UserInfo(user_id=12, world_code="fr")
+
+    # start by fetching the recommended list 3 times (results will differ)
+    for _ in range(3):
         queue.put_nowait({
             "action": "fetch_recommend_list"
         })
 
-    # Create three worker tasks to process the queue concurrently.
+    # Create the worker tasks to process the queue concurrently.
     tasks = []
     for i in range(3):
-        task = asyncio.create_task(worker(f'worker-{i}', queue))
+        task = asyncio.create_task(worker(f'worker-{i}', queue, userDict))
         tasks.append(task)
 
     # Wait until the queue is fully processed.
-    started_at = time.monotonic()
     await queue.join()
-    total_slept_for = time.monotonic() - started_at
 
     # Cancel our worker tasks.
-    for task in tasks:
-        task.cancel()
+    # for task in tasks:
+    #     task.cancel()
     # Wait until all worker tasks are cancelled.
     await asyncio.gather(*tasks, return_exceptions=True)
 
     print('====')
-    print(f'3 workers slept in parallel for {total_slept_for:.2f} seconds')
-    print(f'total expected sleep time: {total_sleep_time:.2f} seconds')
 
 
 asyncio.run(main())

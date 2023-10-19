@@ -1,1 +1,1 @@
-from .api import get_recommended_list
+from .api import get_recommended_list, get_battle_list
