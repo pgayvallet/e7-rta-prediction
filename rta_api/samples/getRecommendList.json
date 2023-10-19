@@ -1,0 +1,52 @@
+{
+  "result_body": {
+    "recommend_list": [
+      {
+        "regDate": "2023-10-19 08:05:24.0",
+        "seasonCode": "pvp_rta_ss12",
+        "hero_code": "c2079",
+        "nickname": "취미생",
+        "world_code": "world_kor",
+        "nick_no": 50817668,
+        "rank": 70
+      },
+      {
+        "regDate": "2023-10-19 08:05:24.0",
+        "seasonCode": "pvp_rta_ss12",
+        "hero_code": "c2062_s01",
+        "nickname": "改名后老出28速",
+        "world_code": "world_global",
+        "nick_no": 73673006,
+        "rank": 70
+      },
+      {
+        "regDate": "2023-10-19 08:05:24.0",
+        "seasonCode": "pvp_rta_ss12",
+        "hero_code": "c2012",
+        "nickname": "EnzK1OnE",
+        "world_code": "world_global",
+        "nick_no": 131934086,
+        "rank": 70
+      },
+      {
+        "regDate": "2023-10-19 08:05:24.0",
+        "seasonCode": "pvp_rta_ss12",
+        "hero_code": "c1007",
+        "nickname": "부힣",
+        "world_code": "world_kor",
+        "nick_no": 77138874,
+        "rank": 70
+      },
+      {
+        "regDate": "2023-10-19 08:05:24.0",
+        "seasonCode": "pvp_rta_ss12",
+        "hero_code": "c5089",
+        "nickname": "晨曦秋景",
+        "world_code": "world_asia",
+        "nick_no": 72586669,
+        "rank": 70
+      }
+    ]
+  },
+  "return_code": 0
+}

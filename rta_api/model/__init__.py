@@ -1,0 +1,1 @@
+from .get_recommend_list import GetRecommendListResponseList, GetRecommendListRecommendedList
