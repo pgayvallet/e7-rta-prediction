@@ -1,20 +1,41 @@
 import asyncio
 import aiohttp
+import json
 from typing import TypedDict
-import time
 import rta_api
 
 
 class UserInfo(TypedDict):
     user_id: int
+    user_name: str
     world_code: str
 
 
-async def worker(name, queue, userDict):
+async def worker(name: str, queue: asyncio.Queue, user_dict: dict[str, UserInfo], max_count: int):
+    async def enqueue_user_if_needed(user_id: int, user_name: str, world_code: str):
+        player_id_str = f'{user_id}-{world_code}'
+        if user_dict.get(player_id_str) is None:
+            # print(f'{name} - adding player {player.nick_no} - {player.world_code}')
+            await queue.put({
+                "action": "fetch_battle_list",
+                "user_id": user_id,
+                "world_code": world_code
+            })
+            user_dict[player_id_str] = {
+                "user_id": user_id,
+                "user_name": user_name,
+                "world_code": world_code,
+            }
+
     async with aiohttp.ClientSession() as session:
         while True:
             # Get a "work item" out of the queue.
             task = await queue.get()
+
+            # exit earlier if we've reached our goal
+            if len(user_dict) > max_count:
+                queue.task_done()
+                continue
 
             print(f'{name} - received task {task}')
 
@@ -22,37 +43,19 @@ async def worker(name, queue, userDict):
                 case "fetch_recommend_list":
                     response = await rta_api.get_recommended_list(session)
                     for player in response.recommend_list:
-                        player_id_str = f'{player.nick_no}-{player.world_code}'
-                        if userDict.get(player_id_str) is None:
-                            print(f'{name} - adding player {player.nick_no} - {player.world_code}')
-                            await queue.put({
-                                "action": "fetch_battle_list",
-                                "user_id": player.nick_no,
-                                "world_code": player.world_code
-                            })
-                            # TODO: properly add to userDict
-                            userDict[player_id_str] = "FILLED"
-                        else:
-                            print(f'{name} - player {player.nick_no} - {player.world_code} - already processed')
-
-
+                        await enqueue_user_if_needed(user_id=player.nick_no,
+                                                     user_name=player.nickname,
+                                                     world_code=player.world_code)
                 case "fetch_battle_list":
-                    response = await rta_api.get_battle_list(session, user_id=task["user_id"], world_code=task["world_code"])
+                    response = await rta_api.get_battle_list(session,
+                                                             user_id=task["user_id"],
+                                                             world_code=task["world_code"])
                     for battle in response.result_body.battle_list:
-                        player_id_str = f'{battle.matchPlayerNicknameno}-{battle.enemy_world_code}'
-                        if userDict.get(player_id_str) is None:
-                            print(f'{name} - adding player {battle.matchPlayerNicknameno} - {battle.enemy_world_code}')
-                            await queue.put({
-                                "action": "fetch_battle_list",
-                                "user_id": battle.matchPlayerNicknameno,
-                                "world_code": battle.enemy_world_code,
-                            })
-                            # TODO: properly add to userDict
-                            userDict[player_id_str] = "FILLED"
-                        else:
-                            print(f'{name} - player {battle.matchPlayerNicknameno} - {battle.enemy_world_code} - already processed')
+                        await enqueue_user_if_needed(user_id=battle.matchPlayerNicknameno,
+                                                     user_name=battle.enemy_nick_no,
+                                                     world_code=battle.enemy_world_code)
 
-            print(f'{name} - task done')
+            print(f'{name} - task done - total user added: {len(user_dict)}')
 
             # Notify the queue that the "work item" has been processed.
             queue.task_done()
@@ -62,8 +65,8 @@ async def main():
     # Create a queue that we will use to store our "workload".
     queue = asyncio.Queue()
 
-    userDict: dict[str, UserInfo] = {}
-    userDict["foo"] = UserInfo(user_id=12, world_code="fr")
+    user_dict: dict[str, UserInfo] = {}
+    # userDict["foo"] = UserInfo(user_id=12, world_code="fr")
 
     # start by fetching the recommended list 3 times (results will differ)
     for _ in range(3):
@@ -74,19 +77,21 @@ async def main():
     # Create the worker tasks to process the queue concurrently.
     tasks = []
     for i in range(3):
-        task = asyncio.create_task(worker(f'worker-{i}', queue, userDict))
+        task = asyncio.create_task(worker(f'worker-{i}', queue, user_dict, max_count=2000))
         tasks.append(task)
 
     # Wait until the queue is fully processed.
     await queue.join()
 
     # Cancel our worker tasks.
-    # for task in tasks:
-    #     task.cancel()
+    for task in tasks:
+        task.cancel()
     # Wait until all worker tasks are cancelled.
     await asyncio.gather(*tasks, return_exceptions=True)
 
-    print('====')
+    user_file = open("./data/users.json", "w")
+    user_file.write(json.dumps(list(user_dict.values()), indent=2, ensure_ascii=False))
+    user_file.close()
 
 
 asyncio.run(main())
