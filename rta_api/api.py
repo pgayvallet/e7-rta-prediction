@@ -5,6 +5,7 @@ api_base_url = "https://epic7.gg.onstove.com/gameApi"
 
 # https://sandbox-static.smilegatemegaport.com/gameRecord/epic7/epic7_user_world_global.json
 # https://sandbox-static.smilegatemegaport.com/gameRecord/epic7/epic7_hero.json
+# https://sandbox-static.smilegatemegaport.com/event/qa/epic7/guide/images/hero/c1133_s.png
 
 async def get_recommended_list(session: aiohttp.ClientSession) -> "GetRecommendListRecommendedList":
     async with session.post(f'{api_base_url}/getRecommendList') as request:

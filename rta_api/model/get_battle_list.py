@@ -23,6 +23,8 @@ class GetBattleListResponseBattleListItem(pydantic.BaseModel):
     battle_seq: str
     # id of the season
     season_code: str
+    # number of turns of the battle
+    turn: int
     # grade code of the player
     grade_code: str
     # grade code of the player

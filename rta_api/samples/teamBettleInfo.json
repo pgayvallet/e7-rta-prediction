@@ -1,0 +1,112 @@
+{
+  'my_team': [
+    {
+      'pick_order': 3,
+      'hero_code': 'c4144',
+      'attack_damage': 23219,
+      'receive_damage': 32658.73,
+      'recovery': 7890,
+      'mvp_point': 189224,
+      'artifact': 'efa15',
+      'equip': [
+        'set_vampire',
+        'set_penetrate'
+      ],
+      'respawn': 0,
+      'mvp': 0,
+      'kill_count': 1,
+      'position': 1,
+      'grade': 6,
+      'awaken_grade': 6,
+      'attribute_cd': 'light',
+      'level': 60,
+      'job_cd': 'assassin'
+    },
+    {
+      'pick_order': 5,
+      'hero_code': 'c1102',
+      'attack_damage': 838,
+      'receive_damage': 14221.05,
+      'recovery': 33262,
+      'mvp_point': 59075,
+      'artifact': 'efh07',
+      'equip': [
+        'set_max_hp'
+      ],
+      'respawn': 0,
+      'mvp': 0,
+      'kill_count': 0,
+      'position': 4,
+      'grade': 6,
+      'awaken_grade': 6,
+      'attribute_cd': 'wind',
+      'level': 60,
+      'job_cd': 'manauser'
+    },
+    {
+      'pick_order': 2,
+      'hero_code': 'c2049',
+      'attack_damage': 488,
+      'receive_damage': 79763.4,
+      'recovery': 18781,
+      'mvp_point': 188060,
+      'artifact': 'efh02',
+      'equip': [
+        'set_res',
+        'set_max_hp',
+        'set_immune'
+      ],
+      'respawn': 1,
+      'mvp': 0,
+      'kill_count': 0,
+      'position': 3,
+      'grade': 6,
+      'awaken_grade': 6,
+      'attribute_cd': 'light',
+      'level': 60,
+      'job_cd': 'manauser'
+    },
+    {
+      'pick_order': 1,
+      'hero_code': 'c4004',
+      'attack_damage': 1245,
+      'receive_damage': 142131.78,
+      'recovery': 949,
+      'mvp_point': 251860,
+      'artifact': 'efk04',
+      'equip': [
+        'set_max_hp',
+        'set_max_hp',
+        'set_max_hp'
+      ],
+      'respawn': 0,
+      'mvp': 1,
+      'kill_count': 0,
+      'position': 2,
+      'grade': 6,
+      'awaken_grade': 6,
+      'attribute_cd': 'light',
+      'level': 60,
+      'job_cd': 'knight'
+    },
+    {
+      'pick_order': 4,
+      'hero_code': 'c2079',
+      'attack_damage': 0,
+      'receive_damage': 0.0,
+      'recovery': 0,
+      'mvp_point': 0,
+      'artifact': '',
+      'equip': [],
+      'respawn': 0,
+      'mvp': 0,
+      'kill_count': 0,
+      'position': 0,
+      'grade': 6,
+      'awaken_grade': 6,
+      'attribute_cd': 'light',
+      'level': 60,
+      'job_cd': 'warrior'
+    }
+  ]
+}
