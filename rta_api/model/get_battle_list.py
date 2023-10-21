@@ -16,6 +16,7 @@ class GetBattleListResponseBattleListItemDeck(pydantic.BaseModel):
 class GetBattleListResponseBattleListItem(pydantic.BaseModel):
     # player id of the active player
     nicknameno: int
+    worldCode: str
     # player id of the opponent
     matchPlayerNicknameno: int
     # game id
