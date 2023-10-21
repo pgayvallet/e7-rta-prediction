@@ -2,7 +2,7 @@ import asyncio
 import aiohttp
 import json
 from typing import TypedDict
-import rta_api
+from rta_api import api as rta_api
 
 
 class UserInfo(TypedDict):
@@ -37,7 +37,7 @@ async def worker(name: str, queue: asyncio.Queue, user_dict: dict[str, UserInfo]
                 queue.task_done()
                 continue
 
-            print(f'{name} - received task {task}')
+            # print(f'{name} - received task {task}')
 
             match task["action"]:
                 case "fetch_recommend_list":
@@ -55,18 +55,20 @@ async def worker(name: str, queue: asyncio.Queue, user_dict: dict[str, UserInfo]
                                                      user_name=battle.enemy_nick_no,
                                                      world_code=battle.enemy_world_code)
 
-            print(f'{name} - task done - total user added: {len(user_dict)}')
+            # print(f'{name} - task done - total user added: {len(user_dict)}')
 
             # Notify the queue that the "work item" has been processed.
             queue.task_done()
 
 
-async def main():
+async def fetch_player_list(destination_file: str,
+                            num_worker: int = 3,
+                            initial_recommend_count: int = 5,
+                            max_users: int = 2000) -> 'dict[str, UserInfo]':
     # Create a queue that we will use to store our "workload".
     queue = asyncio.Queue()
 
     user_dict: dict[str, UserInfo] = {}
-    # userDict["foo"] = UserInfo(user_id=12, world_code="fr")
 
     # start by fetching the recommended list 3 times (results will differ)
     for _ in range(3):
@@ -89,9 +91,10 @@ async def main():
     # Wait until all worker tasks are cancelled.
     await asyncio.gather(*tasks, return_exceptions=True)
 
-    user_file = open("./data/users.json", "w")
+    print(f'fetched {len(user_dict)} users')
+
+    user_file = open(destination_file, "w")
     user_file.write(json.dumps(list(user_dict.values()), indent=2, ensure_ascii=False))
     user_file.close()
 
-
-asyncio.run(main())
+    return user_dict
