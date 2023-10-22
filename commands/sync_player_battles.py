@@ -1,9 +1,13 @@
 import asyncio
 import aiohttp
 import json
+import math
+from datetime import datetime
 from typing import TypedDict
 from rta_api import api as rta_api
 from rta_api.model.get_battle_list import GetBattleListResponseBattleListItem
+
+raw_date_format = "%Y-%m-%d %H:%M:%S.%f"
 
 
 async def worker(name: str, queue: asyncio.Queue):
@@ -23,9 +27,12 @@ async def sync_player_battles(user_id: int,
     async with aiohttp.ClientSession() as session:
         response = await rta_api.get_battle_list(session, user_id=user_id, world_code=world_code)
         battle_list = response.result_body.battle_list
+        battles = []
         for raw_battle in battle_list[0:1]:
             battle = convert_raw_battle(raw_battle)
-            print(json.dumps(battle, indent=2))
+            battles.append(battle)
+            # print(json.dumps(battle, indent=2))
+        return battles
 
 
 class RtaBattle(TypedDict):
@@ -37,10 +44,10 @@ class RtaBattle(TypedDict):
     p2_world: str
     p2_grade: str
 
-    ## TODO: seems an integer, safe to convert?
-    battle_id: str
+    battle_id: int
     season_code: str
-
+    # timestamp
+    battle_date: int
     turn_count: int
 
     p1_win: bool
@@ -76,20 +83,15 @@ class RtaBattle(TypedDict):
     # position of the p2 postban (banned by p1), range 1-5
     p2_postban_position: int
 
-    ## TODO: "2023-10-18 14:55:39.0"
-    battle_date: int # timestamp
-
 
 def convert_raw_battle(raw: GetBattleListResponseBattleListItem) -> 'RtaBattle':
     p1_postban = next(char for char in raw.my_deck.hero_list if char.ban == 1)
     p2_postban = next(char for char in raw.enemy_deck.hero_list if char.ban == 1)
     p1_first_pick = next((char for char in raw.my_deck.hero_list if char.ban == 1), None)
 
-    ###
     p1_team_info = json.loads("{" + raw.teamBettleInfo + "}")["my_team"]
     p1_team_info.sort(key=lambda x: x["pick_order"], reverse=False)
     p1_pick_order = list(map(lambda s: s["hero_code"], p1_team_info))
-    ###
 
     p2_team_info = json.loads("{" + raw.teamBettleInfoenemy + "}")["my_team"]
     p2_team_info.sort(key=lambda x: x["pick_order"], reverse=False)
@@ -107,9 +109,10 @@ def convert_raw_battle(raw: GetBattleListResponseBattleListItem) -> 'RtaBattle':
         "p2_world": raw.enemy_world_code,
         "p2_grade": raw.enemy_grade_code,
 
-        "battle_id": raw.battle_seq,
+        "battle_id": int(raw.battle_seq),
         "season_code": raw.season_code,
         "turn_count": raw.turn,
+        "battle_date": math.floor(datetime.strptime(raw.battle_day, raw_date_format).timestamp()),
 
         "p1_win": raw.iswin == 1,
         "p2_win": raw.iswin == 2,
@@ -127,17 +130,17 @@ def convert_raw_battle(raw: GetBattleListResponseBattleListItem) -> 'RtaBattle':
         "p2_first_pick": p1_first_pick is None,
 
         "p1_picks": p1_pick_order,
-        "p1_pick1": p1_pick_order[0],
-        "p1_pick2": p1_pick_order[1],
-        "p1_pick3": p1_pick_order[2],
-        "p1_pick4": p1_pick_order[3],
-        "p1_pick5": p1_pick_order[4],
+        "p1_pick1": p1_pick_order[0] if len(p1_pick_order) > 0 else None,
+        "p1_pick2": p1_pick_order[1] if len(p1_pick_order) > 1 else None,
+        "p1_pick3": p1_pick_order[2] if len(p1_pick_order) > 2 else None,
+        "p1_pick4": p1_pick_order[3] if len(p1_pick_order) > 3 else None,
+        "p1_pick5": p1_pick_order[4] if len(p1_pick_order) > 4 else None,
 
         "p2_picks": p2_pick_order,
-        "p2_pick1": p2_pick_order[0],
-        "p2_pick2": p2_pick_order[1],
-        "p2_pick3": p2_pick_order[2],
-        "p2_pick4": p2_pick_order[3],
-        "p2_pick5": p2_pick_order[4],
+        "p2_pick1": p2_pick_order[0] if len(p2_pick_order) > 0 else None,
+        "p2_pick2": p2_pick_order[1] if len(p2_pick_order) > 1 else None,
+        "p2_pick3": p2_pick_order[2] if len(p2_pick_order) > 2 else None,
+        "p2_pick4": p2_pick_order[3] if len(p2_pick_order) > 3 else None,
+        "p2_pick5": p2_pick_order[4] if len(p2_pick_order) > 4 else None,
     }
     return battle
