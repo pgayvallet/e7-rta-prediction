@@ -1,7 +1,9 @@
 import aiohttp
-from .model import GetRecommendListRecommendedList, GetBattleListResponse
+from .model import GetRecommendListRecommendedList, GetBattleListResponse, HeroList
 
 api_base_url = "https://epic7.gg.onstove.com/gameApi"
+static_assets_url = "https://sandbox-static.smilegatemegaport.com"
+
 
 # https://sandbox-static.smilegatemegaport.com/gameRecord/epic7/epic7_user_world_global.json
 # https://sandbox-static.smilegatemegaport.com/gameRecord/epic7/epic7_hero.json
@@ -28,11 +30,8 @@ async def get_battle_list(session: aiohttp.ClientSession, user_id: int, world_co
     return parsed
 
 
-### lang -> array of
-## code: "c0001",
-## grade: "4",
-## name: "Mercedes",
-## job_cd: "mage",
-## attribute_cd: "fire"
-## },
-###
+async def get_hero_list(session: aiohttp.ClientSession) -> "HeroList":
+    async with session.get(f'{static_assets_url}/gameRecord/epic7/epic7_hero.json') as request:
+        response = await request.json()
+        parsed = HeroList(**response)
+        return parsed

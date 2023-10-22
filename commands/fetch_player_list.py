@@ -71,15 +71,15 @@ async def fetch_player_list(destination_file: str,
     user_dict: dict[str, UserInfo] = {}
 
     # start by fetching the recommended list 3 times (results will differ)
-    for _ in range(3):
+    for _ in range(initial_recommend_count):
         queue.put_nowait({
             "action": "fetch_recommend_list"
         })
 
     # Create the worker tasks to process the queue concurrently.
     tasks = []
-    for i in range(3):
-        task = asyncio.create_task(worker(f'worker-{i}', queue, user_dict, max_count=2000))
+    for i in range(num_worker):
+        task = asyncio.create_task(worker(f'worker-{i}', queue, user_dict, max_count=max_users))
         tasks.append(task)
 
     # Wait until the queue is fully processed.

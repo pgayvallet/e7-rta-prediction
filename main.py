@@ -17,6 +17,11 @@ async def main():
 
     client = create_client()
     indexer = Indexer(client=client)
+
+    await commands.sync_hero_list()
+
+    return
+
     try:
         # response = await indexer.create_index("foo_1")
         # print(response.body)

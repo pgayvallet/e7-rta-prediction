@@ -1,0 +1,2137 @@
+{
+  "c0001": {
+    "code": "c0001",
+    "grade": "4",
+    "name": "Mercedes",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c0002": {
+    "code": "c0002",
+    "grade": "4",
+    "name": "Mercedes",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1001": {
+    "code": "c1001",
+    "grade": "3",
+    "name": "Ras",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c1002": {
+    "code": "c1002",
+    "grade": "5",
+    "name": "Cecilia",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c1003": {
+    "code": "c1003",
+    "grade": "4",
+    "name": "Rose",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c1004": {
+    "code": "c1004",
+    "grade": "4",
+    "name": "Silk",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1005": {
+    "code": "c1005",
+    "grade": "4",
+    "name": "Mercedes",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1006": {
+    "code": "c1006",
+    "grade": "5",
+    "name": "Kise",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c1007": {
+    "code": "c1007",
+    "grade": "5",
+    "name": "Vildred",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c1008": {
+    "code": "c1008",
+    "grade": "4",
+    "name": "Armin",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c1009": {
+    "code": "c1009",
+    "grade": "5",
+    "name": "Charlotte",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c1010": {
+    "code": "c1010",
+    "grade": "4",
+    "name": "Zerato",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1011": {
+    "code": "c1011",
+    "grade": "4",
+    "name": "Karin",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c1012": {
+    "code": "c1012",
+    "grade": "4",
+    "name": "Corvus",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1013": {
+    "code": "c1013",
+    "grade": "4",
+    "name": "Cartuja",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1014": {
+    "code": "c1014",
+    "grade": "4",
+    "name": "Cidd",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c1015": {
+    "code": "c1015",
+    "grade": "5",
+    "name": "Baal & Sezan",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1016": {
+    "code": "c1016",
+    "grade": "5",
+    "name": "Yufine",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1017": {
+    "code": "c1017",
+    "grade": "4",
+    "name": "Achates",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c1018": {
+    "code": "c1018",
+    "grade": "3",
+    "name": "Aither",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c1019": {
+    "code": "c1019",
+    "grade": "5",
+    "name": "Ravi",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1020": {
+    "code": "c1020",
+    "grade": "4",
+    "name": "Schuri",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1021": {
+    "code": "c1021",
+    "grade": "4",
+    "name": "Dingo",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1022": {
+    "code": "c1022",
+    "grade": "5",
+    "name": "Ruele of Light",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c1023": {
+    "code": "c1023",
+    "grade": "5",
+    "name": "Kayron",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c1024": {
+    "code": "c1024",
+    "grade": "5",
+    "name": "Iseria",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1027": {
+    "code": "c1027",
+    "grade": "5",
+    "name": "Charles",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c1028": {
+    "code": "c1028",
+    "grade": "4",
+    "name": "Clarissa",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1029": {
+    "code": "c1029",
+    "grade": "4",
+    "name": "Leo",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1030": {
+    "code": "c1030",
+    "grade": "5",
+    "name": "Yuna",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c1031": {
+    "code": "c1031",
+    "grade": "4",
+    "name": "Lots",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c1032": {
+    "code": "c1032",
+    "grade": "4",
+    "name": "Maya",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c1033": {
+    "code": "c1033",
+    "grade": "4",
+    "name": "Coli",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c1034": {
+    "code": "c1034",
+    "grade": "5",
+    "name": "Straze",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c1035": {
+    "code": "c1035",
+    "grade": "4",
+    "name": "Purrgis",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1036": {
+    "code": "c1036",
+    "grade": "4",
+    "name": "Crozet",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c1037": {
+    "code": "c1037",
+    "grade": "4",
+    "name": "Dominiel",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1038": {
+    "code": "c1038",
+    "grade": "5",
+    "name": "Sez",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c1039": {
+    "code": "c1039",
+    "grade": "5",
+    "name": "Haste",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c1040": {
+    "code": "c1040",
+    "grade": "4",
+    "name": "Serila",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1042": {
+    "code": "c1042",
+    "grade": "5",
+    "name": "Tywin",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c1043": {
+    "code": "c1043",
+    "grade": "4",
+    "name": "Romann",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1044": {
+    "code": "c1044",
+    "grade": "5",
+    "name": "Mui",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1046": {
+    "code": "c1046",
+    "grade": "5",
+    "name": "Lidica",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1047": {
+    "code": "c1047",
+    "grade": "5",
+    "name": "Ken",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1048": {
+    "code": "c1048",
+    "grade": "5",
+    "name": "Aramintha",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1049": {
+    "code": "c1049",
+    "grade": "5",
+    "name": "Chloe",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1050": {
+    "code": "c1050",
+    "grade": "5",
+    "name": "Tenebria",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1053": {
+    "code": "c1053",
+    "grade": "5",
+    "name": "Basar",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c1054": {
+    "code": "c1054",
+    "grade": "4",
+    "name": "Rin",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c1062": {
+    "code": "c1062",
+    "grade": "4",
+    "name": "Angelica",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c1065": {
+    "code": "c1065",
+    "grade": "4",
+    "name": "Surin",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c1066": {
+    "code": "c1066",
+    "grade": "5",
+    "name": "Luna",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1067": {
+    "code": "c1067",
+    "grade": "5",
+    "name": "Tamarinne",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c1069": {
+    "code": "c1069",
+    "grade": "5",
+    "name": "Ludwig",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c1070": {
+    "code": "c1070",
+    "grade": "5",
+    "name": "Krau",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c1071": {
+    "code": "c1071",
+    "grade": "5",
+    "name": "Bellona",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1072": {
+    "code": "c1072",
+    "grade": "5",
+    "name": "Sigret",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1073": {
+    "code": "c1073",
+    "grade": "5",
+    "name": "Kawerik",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1074": {
+    "code": "c1074",
+    "grade": "5",
+    "name": "Violet",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c1076": {
+    "code": "c1076",
+    "grade": "5",
+    "name": "Diene",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c1079": {
+    "code": "c1079",
+    "grade": "5",
+    "name": "Cermia",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1080": {
+    "code": "c1080",
+    "grade": "5",
+    "name": "Pavel",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1081": {
+    "code": "c1081",
+    "grade": "5",
+    "name": "Cerise",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c1082": {
+    "code": "c1082",
+    "grade": "5",
+    "name": "Luluca",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1083": {
+    "code": "c1083",
+    "grade": "5",
+    "name": "Zeno",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1085": {
+    "code": "c1085",
+    "grade": "4",
+    "name": "Khawazu",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1086": {
+    "code": "c1086",
+    "grade": "4",
+    "name": "Khawana",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c1087": {
+    "code": "c1087",
+    "grade": "4",
+    "name": "Furious",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c1088": {
+    "code": "c1088",
+    "grade": "5",
+    "name": "Vivian",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c1089": {
+    "code": "c1089",
+    "grade": "5",
+    "name": "Lilias",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c1090": {
+    "code": "c1090",
+    "grade": "5",
+    "name": "Ray",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c1091": {
+    "code": "c1091",
+    "grade": "5",
+    "name": "Elena",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c1092": {
+    "code": "c1092",
+    "grade": "5",
+    "name": "Sol",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1093": {
+    "code": "c1093",
+    "grade": "5",
+    "name": "Baiken",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c1094": {
+    "code": "c1094",
+    "grade": "5",
+    "name": "Dizzy",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1095": {
+    "code": "c1095",
+    "grade": "5",
+    "name": "Lilibet",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1096": {
+    "code": "c1096",
+    "grade": "5",
+    "name": "Melissa",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1097": {
+    "code": "c1097",
+    "grade": "5",
+    "name": "Bomb Model Kanna",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1099": {
+    "code": "c1099",
+    "grade": "5",
+    "name": "Command Model Laika",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1100": {
+    "code": "c1100",
+    "grade": "5",
+    "name": "Alencia",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1101": {
+    "code": "c1101",
+    "grade": "5",
+    "name": "Choux",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1102": {
+    "code": "c1102",
+    "grade": "5",
+    "name": "Roana",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c1103": {
+    "code": "c1103",
+    "grade": "5",
+    "name": "Celine",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c1104": {
+    "code": "c1104",
+    "grade": "5",
+    "name": "Mort",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c1105": {
+    "code": "c1105",
+    "grade": "5",
+    "name": "Elphelt",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1106": {
+    "code": "c1106",
+    "grade": "5",
+    "name": "Senya",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c1107": {
+    "code": "c1107",
+    "grade": "4",
+    "name": "Kizuna AI",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c1108": {
+    "code": "c1108",
+    "grade": "5",
+    "name": "Ervalen",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c1109": {
+    "code": "c1109",
+    "grade": "5",
+    "name": "Landy",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c1110": {
+    "code": "c1110",
+    "grade": "5",
+    "name": "Flan",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c1111": {
+    "code": "c1111",
+    "grade": "5",
+    "name": "Eda",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1112": {
+    "code": "c1112",
+    "grade": "5",
+    "name": "Politis",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1113": {
+    "code": "c1113",
+    "grade": "5",
+    "name": "Ilynav",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c1114": {
+    "code": "c1114",
+    "grade": "5",
+    "name": "Rem",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1115": {
+    "code": "c1115",
+    "grade": "5",
+    "name": "Ram",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c1116": {
+    "code": "c1116",
+    "grade": "5",
+    "name": "Emilia",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c1117": {
+    "code": "c1117",
+    "grade": "5",
+    "name": "Belian",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c1118": {
+    "code": "c1118",
+    "grade": "5",
+    "name": "Ran",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c1119": {
+    "code": "c1119",
+    "grade": "5",
+    "name": "Zahhak",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1121": {
+    "code": "c1121",
+    "grade": "5",
+    "name": "Rimuru",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1122": {
+    "code": "c1122",
+    "grade": "5",
+    "name": "Milim",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1123": {
+    "code": "c1123",
+    "grade": "5",
+    "name": "Shuna",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c1124": {
+    "code": "c1124",
+    "grade": "5",
+    "name": "Arunka",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c1125": {
+    "code": "c1125",
+    "grade": "5",
+    "name": "Peira",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c1126": {
+    "code": "c1126",
+    "grade": "5",
+    "name": "Lua",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c1127": {
+    "code": "c1127",
+    "grade": "5",
+    "name": "Taeyou",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c1128": {
+    "code": "c1128",
+    "grade": "5",
+    "name": "Hwayoung",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1129": {
+    "code": "c1129",
+    "grade": "5",
+    "name": "Aria",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c1130": {
+    "code": "c1130",
+    "grade": "5",
+    "name": "Jack-O'",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1131": {
+    "code": "c1131",
+    "grade": "5",
+    "name": "Yulha",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c1132": {
+    "code": "c1132",
+    "grade": "5",
+    "name": "Sharun",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c1133": {
+    "code": "c1133",
+    "grade": "5",
+    "name": "Zio",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c1134": {
+    "code": "c1134",
+    "grade": "5",
+    "name": "Edward Elric",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1135": {
+    "code": "c1135",
+    "grade": "5",
+    "name": "Roy Mustang",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c1136": {
+    "code": "c1136",
+    "grade": "5",
+    "name": "Riza Hawkeye",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c1137": {
+    "code": "c1137",
+    "grade": "5",
+    "name": "ae-KARINA",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c1138": {
+    "code": "c1138",
+    "grade": "5",
+    "name": "ae-GISELLE",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c1139": {
+    "code": "c1139",
+    "grade": "5",
+    "name": "ae-WINTER",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c1140": {
+    "code": "c1140",
+    "grade": "5",
+    "name": "ae-NINGNING",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c1141": {
+    "code": "c1141",
+    "grade": "5",
+    "name": "Beehoo",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1142": {
+    "code": "c1142",
+    "grade": "5",
+    "name": "Eligos",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1143": {
+    "code": "c1143",
+    "grade": "5",
+    "name": "Amid",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c1144": {
+    "code": "c1144",
+    "grade": "5",
+    "name": "Abigail",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1145": {
+    "code": "c1145",
+    "grade": "5",
+    "name": "Brieg",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c1146": {
+    "code": "c1146",
+    "grade": "5",
+    "name": "Benimaru",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c1150": {
+    "code": "c1150",
+    "grade": "4",
+    "name": "Veronica",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c1151": {
+    "code": "c1151",
+    "grade": "5",
+    "name": "Nahkwol",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c2002": {
+    "code": "c2002",
+    "grade": "5",
+    "name": "Fallen Cecilia",
+    "job_cd": "knight",
+    "attribute_cd": "dark"
+  },
+  "c2003": {
+    "code": "c2003",
+    "grade": "4",
+    "name": "Shadow Rose",
+    "job_cd": "knight",
+    "attribute_cd": "dark"
+  },
+  "c2004": {
+    "code": "c2004",
+    "grade": "4",
+    "name": "Wanderer Silk",
+    "job_cd": "ranger",
+    "attribute_cd": "light"
+  },
+  "c2005": {
+    "code": "c2005",
+    "grade": "4",
+    "name": "Celestial Mercedes",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2006": {
+    "code": "c2006",
+    "grade": "5",
+    "name": "Judge Kise",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c2007": {
+    "code": "c2007",
+    "grade": "5",
+    "name": "Arbiter Vildred",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2008": {
+    "code": "c2008",
+    "grade": "4",
+    "name": "Crimson Armin",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c2009": {
+    "code": "c2009",
+    "grade": "5",
+    "name": "Little Queen Charlotte",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c2010": {
+    "code": "c2010",
+    "grade": "4",
+    "name": "Champion Zerato",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2011": {
+    "code": "c2011",
+    "grade": "4",
+    "name": "Blood Blade Karin",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2012": {
+    "code": "c2012",
+    "grade": "5",
+    "name": "Dark Corvus",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2013": {
+    "code": "c2013",
+    "grade": "4",
+    "name": "Assassin Cartuja",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2014": {
+    "code": "c2014",
+    "grade": "4",
+    "name": "Assassin Cidd",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2015": {
+    "code": "c2015",
+    "grade": "5",
+    "name": "Sage Baal & Sezan",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c2017": {
+    "code": "c2017",
+    "grade": "4",
+    "name": "Shooting Star Achates",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c2018": {
+    "code": "c2018",
+    "grade": "4",
+    "name": "Guider Aither",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c2019": {
+    "code": "c2019",
+    "grade": "5",
+    "name": "Apocalypse Ravi",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2020": {
+    "code": "c2020",
+    "grade": "4",
+    "name": "Watcher Schuri",
+    "job_cd": "ranger",
+    "attribute_cd": "light"
+  },
+  "c2021": {
+    "code": "c2021",
+    "grade": "4",
+    "name": "Blaze Dingo",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c2022": {
+    "code": "c2022",
+    "grade": "5",
+    "name": "Destina",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c2023": {
+    "code": "c2023",
+    "grade": "5",
+    "name": "Twisted Eidolon Kayron",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c2024": {
+    "code": "c2024",
+    "grade": "5",
+    "name": "Briar Witch Iseria",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c2027": {
+    "code": "c2027",
+    "grade": "5",
+    "name": "Closer Charles",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2028": {
+    "code": "c2028",
+    "grade": "4",
+    "name": "Kitty Clarissa",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2029": {
+    "code": "c2029",
+    "grade": "4",
+    "name": "Roaming Warrior Leo",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c2031": {
+    "code": "c2031",
+    "grade": "4",
+    "name": "Auxiliary Lots",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2032": {
+    "code": "c2032",
+    "grade": "4",
+    "name": "Fighter Maya",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c2033": {
+    "code": "c2033",
+    "grade": "4",
+    "name": "Assassin Coli",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2035": {
+    "code": "c2035",
+    "grade": "4",
+    "name": "General Purrgis",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c2036": {
+    "code": "c2036",
+    "grade": "4",
+    "name": "Troublemaker Crozet",
+    "job_cd": "knight",
+    "attribute_cd": "dark"
+  },
+  "c2037": {
+    "code": "c2037",
+    "grade": "4",
+    "name": "Challenger Dominiel",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2038": {
+    "code": "c2038",
+    "grade": "5",
+    "name": "Specimen Sez",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c2039": {
+    "code": "c2039",
+    "grade": "5",
+    "name": "Blood Moon Haste",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c2042": {
+    "code": "c2042",
+    "grade": "5",
+    "name": "Ambitious Tywin",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c2043": {
+    "code": "c2043",
+    "grade": "4",
+    "name": "Benevolent Romann",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c2046": {
+    "code": "c2046",
+    "grade": "5",
+    "name": "Faithless Lidica",
+    "job_cd": "ranger",
+    "attribute_cd": "light"
+  },
+  "c2047": {
+    "code": "c2047",
+    "grade": "5",
+    "name": "Martial Artist Ken",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2048": {
+    "code": "c2048",
+    "grade": "5",
+    "name": "Silver Blade Aramintha",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c2049": {
+    "code": "c2049",
+    "grade": "5",
+    "name": "Maid Chloe",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c2050": {
+    "code": "c2050",
+    "grade": "5",
+    "name": "Specter Tenebria",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2053": {
+    "code": "c2053",
+    "grade": "5",
+    "name": "Desert Jewel Basar",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c2054": {
+    "code": "c2054",
+    "grade": "4",
+    "name": "Crescent Moon Rin",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2062": {
+    "code": "c2062",
+    "grade": "4",
+    "name": "Sinful Angelica",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c2065": {
+    "code": "c2065",
+    "grade": "4",
+    "name": "Tempest Surin",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c2070": {
+    "code": "c2070",
+    "grade": "5",
+    "name": "Last Rider Krau",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c2071": {
+    "code": "c2071",
+    "grade": "5",
+    "name": "Lone Crescent Bellona",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2072": {
+    "code": "c2072",
+    "grade": "5",
+    "name": "Operator Sigret",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c2073": {
+    "code": "c2073",
+    "grade": "5",
+    "name": "Mediator Kawerik",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2074": {
+    "code": "c2074",
+    "grade": "5",
+    "name": "Remnant Violet",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c2079": {
+    "code": "c2079",
+    "grade": "5",
+    "name": "Lionheart Cermia",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c2080": {
+    "code": "c2080",
+    "grade": "5",
+    "name": "Commander Pavel",
+    "job_cd": "ranger",
+    "attribute_cd": "light"
+  },
+  "c2082": {
+    "code": "c2082",
+    "grade": "5",
+    "name": "Top Model Luluca",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2085": {
+    "code": "c2085",
+    "grade": "4",
+    "name": "Inferno Khawazu",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2086": {
+    "code": "c2086",
+    "grade": "4",
+    "name": "Great Chief Khawana",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2087": {
+    "code": "c2087",
+    "grade": "4",
+    "name": "Peacemaker Furious",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c2088": {
+    "code": "c2088",
+    "grade": "5",
+    "name": "Sylvan Sage Vivian",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c2089": {
+    "code": "c2089",
+    "grade": "5",
+    "name": "Conqueror Lilias",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c2090": {
+    "code": "c2090",
+    "grade": "5",
+    "name": "Death Dealer Ray",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c2091": {
+    "code": "c2091",
+    "grade": "5",
+    "name": "Astromancer Elena",
+    "job_cd": "ranger",
+    "attribute_cd": "light"
+  },
+  "c2095": {
+    "code": "c2095",
+    "grade": "5",
+    "name": "Designer Lilibet",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2099": {
+    "code": "c2099",
+    "grade": "5",
+    "name": "Architect Laika",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c2101": {
+    "code": "c2101",
+    "grade": "5",
+    "name": "Urban Shadow Choux",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c2102": {
+    "code": "c2102",
+    "grade": "5",
+    "name": "Requiem Roana",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c2103": {
+    "code": "c2103",
+    "grade": "5",
+    "name": "Spirit Eye Celine",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c2109": {
+    "code": "c2109",
+    "grade": "5",
+    "name": "Navy Captain Landy",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c2110": {
+    "code": "c2110",
+    "grade": "5",
+    "name": "Pirate Captain Flan",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c2111": {
+    "code": "c2111",
+    "grade": "5",
+    "name": "Solitaria of the Snow",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c3001": {
+    "code": "c3001",
+    "grade": "3",
+    "name": "Butcher Corps Inquisitor",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c3002": {
+    "code": "c3002",
+    "grade": "3",
+    "name": "Taranor Royal Guard",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c3003": {
+    "code": "c3003",
+    "grade": "3",
+    "name": "Kluri",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c3004": {
+    "code": "c3004",
+    "grade": "3",
+    "name": "Arowell",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c3005": {
+    "code": "c3005",
+    "grade": "3",
+    "name": "Pyllis",
+    "job_cd": "knight",
+    "attribute_cd": "dark"
+  },
+  "c3006": {
+    "code": "c3006",
+    "grade": "3",
+    "name": "Bask",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c3011": {
+    "code": "c3011",
+    "grade": "3",
+    "name": "Judith",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c3012": {
+    "code": "c3012",
+    "grade": "3",
+    "name": "Alexa",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c3013": {
+    "code": "c3013",
+    "grade": "3",
+    "name": "Roozid",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c3014": {
+    "code": "c3014",
+    "grade": "3",
+    "name": "Mirsa",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c3015": {
+    "code": "c3015",
+    "grade": "3",
+    "name": "Sven",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c3021": {
+    "code": "c3021",
+    "grade": "3",
+    "name": "Tieria",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c3022": {
+    "code": "c3022",
+    "grade": "3",
+    "name": "Enott",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c3023": {
+    "code": "c3023",
+    "grade": "3",
+    "name": "Helga",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c3024": {
+    "code": "c3024",
+    "grade": "3",
+    "name": "Gunther",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c3025": {
+    "code": "c3025",
+    "grade": "3",
+    "name": "Church of Ilryos Axe",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c3026": {
+    "code": "c3026",
+    "grade": "4",
+    "name": "Free Spirit Tieria",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c3031": {
+    "code": "c3031",
+    "grade": "3",
+    "name": "Azalea",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c3032": {
+    "code": "c3032",
+    "grade": "3",
+    "name": "Taranor Guard",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c3033": {
+    "code": "c3033",
+    "grade": "3",
+    "name": "Mucacha",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c3034": {
+    "code": "c3034",
+    "grade": "3",
+    "name": "Rikoris",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c3035": {
+    "code": "c3035",
+    "grade": "3",
+    "name": "Lorina",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c3041": {
+    "code": "c3041",
+    "grade": "3",
+    "name": "Hazel",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c3042": {
+    "code": "c3042",
+    "grade": "3",
+    "name": "Montmorancy",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c3043": {
+    "code": "c3043",
+    "grade": "3",
+    "name": "Adlay",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c3044": {
+    "code": "c3044",
+    "grade": "3",
+    "name": "Doris",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c3045": {
+    "code": "c3045",
+    "grade": "3",
+    "name": "Otillie",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c3051": {
+    "code": "c3051",
+    "grade": "3",
+    "name": "Carrot",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c3052": {
+    "code": "c3052",
+    "grade": "3",
+    "name": "Jena",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c3053": {
+    "code": "c3053",
+    "grade": "3",
+    "name": "Jecht",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c3054": {
+    "code": "c3054",
+    "grade": "3",
+    "name": "Elson",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c3055": {
+    "code": "c3055",
+    "grade": "3",
+    "name": "Hurado",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c3061": {
+    "code": "c3061",
+    "grade": "3",
+    "name": "Nemunas",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c3062": {
+    "code": "c3062",
+    "grade": "3",
+    "name": "Rima",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c3063": {
+    "code": "c3063",
+    "grade": "3",
+    "name": "Kiris",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c3064": {
+    "code": "c3064",
+    "grade": "3",
+    "name": "Celeste",
+    "job_cd": "ranger",
+    "attribute_cd": "light"
+  },
+  "c3065": {
+    "code": "c3065",
+    "grade": "3",
+    "name": "Wanda",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c3071": {
+    "code": "c3071",
+    "grade": "3",
+    "name": "Carmainerose",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c3072": {
+    "code": "c3072",
+    "grade": "3",
+    "name": "Mistychain",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c3073": {
+    "code": "c3073",
+    "grade": "3",
+    "name": "Pearlhorizon",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c3074": {
+    "code": "c3074",
+    "grade": "3",
+    "name": "Gloomyrain",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  },
+  "c3075": {
+    "code": "c3075",
+    "grade": "3",
+    "name": "Requiemroar",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c3084": {
+    "code": "c3084",
+    "grade": "3",
+    "name": "Kikirat v2",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c3091": {
+    "code": "c3091",
+    "grade": "3",
+    "name": "Hataan",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c3092": {
+    "code": "c3092",
+    "grade": "3",
+    "name": "Lena",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c3093": {
+    "code": "c3093",
+    "grade": "3",
+    "name": "Ains",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c3094": {
+    "code": "c3094",
+    "grade": "3",
+    "name": "Eaton",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c3095": {
+    "code": "c3095",
+    "grade": "3",
+    "name": "Batisse",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c3101": {
+    "code": "c3101",
+    "grade": "3",
+    "name": "Godmother",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c3102": {
+    "code": "c3102",
+    "grade": "3",
+    "name": "Ian",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c3103": {
+    "code": "c3103",
+    "grade": "3",
+    "name": "Glenn",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c3104": {
+    "code": "c3104",
+    "grade": "3",
+    "name": "Sonia",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c3105": {
+    "code": "c3105",
+    "grade": "3",
+    "name": "Ainos",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c3113": {
+    "code": "c3113",
+    "grade": "3",
+    "name": "Lucy",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c3121": {
+    "code": "c3121",
+    "grade": "3",
+    "name": "Melany",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c3122": {
+    "code": "c3122",
+    "grade": "3",
+    "name": "Helen",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c3123": {
+    "code": "c3123",
+    "grade": "3",
+    "name": "Christy",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c3124": {
+    "code": "c3124",
+    "grade": "3",
+    "name": "Camilla",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c3125": {
+    "code": "c3125",
+    "grade": "3",
+    "name": "Penelope",
+    "job_cd": "assassin",
+    "attribute_cd": "dark"
+  },
+  "c3131": {
+    "code": "c3131",
+    "grade": "3",
+    "name": "Januta",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c3132": {
+    "code": "c3132",
+    "grade": "3",
+    "name": "Muwi",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c3133": {
+    "code": "c3133",
+    "grade": "3",
+    "name": "Orte",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c3134": {
+    "code": "c3134",
+    "grade": "3",
+    "name": "Yoonryoung",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c3135": {
+    "code": "c3135",
+    "grade": "3",
+    "name": "Hasol",
+    "job_cd": "knight",
+    "attribute_cd": "dark"
+  },
+  "c3143": {
+    "code": "c3143",
+    "grade": "3",
+    "name": "Adin",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c3151": {
+    "code": "c3151",
+    "grade": "3",
+    "name": "Juni",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c3152": {
+    "code": "c3152",
+    "grade": "3",
+    "name": "Talaz",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c3153": {
+    "code": "c3153",
+    "grade": "3",
+    "name": "Lilka",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c3154": {
+    "code": "c3154",
+    "grade": "3",
+    "name": "Talia",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c3155": {
+    "code": "c3155",
+    "grade": "3",
+    "name": "Suthan",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c4001": {
+    "code": "c4001",
+    "grade": "3",
+    "name": "Chaos Inquisitor",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c4003": {
+    "code": "c4003",
+    "grade": "3",
+    "name": "Falconer Kluri",
+    "job_cd": "knight",
+    "attribute_cd": "wind"
+  },
+  "c4004": {
+    "code": "c4004",
+    "grade": "3",
+    "name": "Unbound Knight Arowell",
+    "job_cd": "knight",
+    "attribute_cd": "light"
+  },
+  "c4005": {
+    "code": "c4005",
+    "grade": "3",
+    "name": "Shadow Knight Pyllis",
+    "job_cd": "knight",
+    "attribute_cd": "dark"
+  },
+  "c4012": {
+    "code": "c4012",
+    "grade": "3",
+    "name": "Summer's Disciple Alexa",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c4013": {
+    "code": "c4013",
+    "grade": "3",
+    "name": "Righteous Thief Roozid",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c4023": {
+    "code": "c4023",
+    "grade": "3",
+    "name": "Mercenary Helga",
+    "job_cd": "warrior",
+    "attribute_cd": "wind"
+  },
+  "c4025": {
+    "code": "c4025",
+    "grade": "3",
+    "name": "Chaos Sect Axe",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c4034": {
+    "code": "c4034",
+    "grade": "3",
+    "name": "Captain Rikoris",
+    "job_cd": "warrior",
+    "attribute_cd": "light"
+  },
+  "c4035": {
+    "code": "c4035",
+    "grade": "3",
+    "name": "Commander Lorina",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c4041": {
+    "code": "c4041",
+    "grade": "3",
+    "name": "Mascot Hazel",
+    "job_cd": "manauser",
+    "attribute_cd": "fire"
+  },
+  "c4042": {
+    "code": "c4042",
+    "grade": "3",
+    "name": "Angelic Montmorancy",
+    "job_cd": "manauser",
+    "attribute_cd": "ice"
+  },
+  "c4044": {
+    "code": "c4044",
+    "grade": "3",
+    "name": "Magic Scholar Doris",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c4051": {
+    "code": "c4051",
+    "grade": "3",
+    "name": "Researcher Carrot",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c4052": {
+    "code": "c4052",
+    "grade": "3",
+    "name": "Shepherd Jena",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c4062": {
+    "code": "c4062",
+    "grade": "3",
+    "name": "Muse Rima",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c4065": {
+    "code": "c4065",
+    "grade": "3",
+    "name": "All-Rounder Wanda",
+    "job_cd": "ranger",
+    "attribute_cd": "dark"
+  },
+  "c4071": {
+    "code": "c4071",
+    "grade": "3",
+    "name": "Zealot Carmainerose",
+    "job_cd": "mage",
+    "attribute_cd": "fire"
+  },
+  "c4073": {
+    "code": "c4073",
+    "grade": "3",
+    "name": "Doll Maker Pearlhorizon",
+    "job_cd": "mage",
+    "attribute_cd": "wind"
+  },
+  "c4103": {
+    "code": "c4103",
+    "grade": "3",
+    "name": "Vigilante Leader Glenn",
+    "job_cd": "ranger",
+    "attribute_cd": "wind"
+  },
+  "c4105": {
+    "code": "c4105",
+    "grade": "3",
+    "name": "Ainos 2.0",
+    "job_cd": "manauser",
+    "attribute_cd": "dark"
+  },
+  "c4141": {
+    "code": "c4141",
+    "grade": "3",
+    "name": "Holy Flame Adin",
+    "job_cd": "assassin",
+    "attribute_cd": "fire"
+  },
+  "c4142": {
+    "code": "c4142",
+    "grade": "3",
+    "name": "Serene Purity Adin",
+    "job_cd": "assassin",
+    "attribute_cd": "ice"
+  },
+  "c4143": {
+    "code": "c4143",
+    "grade": "3",
+    "name": "Verdant Adin",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c4144": {
+    "code": "c4144",
+    "grade": "3",
+    "name": "Savior Adin",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c5001": {
+    "code": "c5001",
+    "grade": "3",
+    "name": "Adventurer Ras",
+    "job_cd": "knight",
+    "attribute_cd": "fire"
+  },
+  "c5004": {
+    "code": "c5004",
+    "grade": "5",
+    "name": "Archdemon's Shadow",
+    "job_cd": "mage",
+    "attribute_cd": "dark"
+  },
+  "c5009": {
+    "code": "c5009",
+    "grade": "5",
+    "name": "Summer Break Charlotte",
+    "job_cd": "knight",
+    "attribute_cd": "ice"
+  },
+  "c5016": {
+    "code": "c5016",
+    "grade": "5",
+    "name": "Holiday Yufine",
+    "job_cd": "warrior",
+    "attribute_cd": "fire"
+  },
+  "c5024": {
+    "code": "c5024",
+    "grade": "5",
+    "name": "Summertime Iseria",
+    "job_cd": "ranger",
+    "attribute_cd": "fire"
+  },
+  "c5050": {
+    "code": "c5050",
+    "grade": "5",
+    "name": "Fairytale Tenebria",
+    "job_cd": "mage",
+    "attribute_cd": "ice"
+  },
+  "c5071": {
+    "code": "c5071",
+    "grade": "5",
+    "name": "Seaside Bellona",
+    "job_cd": "ranger",
+    "attribute_cd": "ice"
+  },
+  "c5082": {
+    "code": "c5082",
+    "grade": "5",
+    "name": "Ocean Breeze Luluca",
+    "job_cd": "manauser",
+    "attribute_cd": "wind"
+  },
+  "c5089": {
+    "code": "c5089",
+    "grade": "5",
+    "name": "Midnight Gala Lilias",
+    "job_cd": "assassin",
+    "attribute_cd": "wind"
+  },
+  "c5149": {
+    "code": "c5149",
+    "grade": "5",
+    "name": "Lethe",
+    "job_cd": "warrior",
+    "attribute_cd": "ice"
+  },
+  "c6008": {
+    "code": "c6008",
+    "grade": "4",
+    "name": "Bad Cat Armin",
+    "job_cd": "warrior",
+    "attribute_cd": "dark"
+  },
+  "c6011": {
+    "code": "c6011",
+    "grade": "4",
+    "name": "Last Piece Karin",
+    "job_cd": "assassin",
+    "attribute_cd": "light"
+  },
+  "c6017": {
+    "code": "c6017",
+    "grade": "4",
+    "name": "Infinite Horizon Achates",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c6037": {
+    "code": "c6037",
+    "grade": "4",
+    "name": "Moon Bunny Dominiel",
+    "job_cd": "manauser",
+    "attribute_cd": "light"
+  },
+  "c6062": {
+    "code": "c6062",
+    "grade": "4",
+    "name": "Angel of Light Angelica",
+    "job_cd": "mage",
+    "attribute_cd": "light"
+  }
+}
