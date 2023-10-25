@@ -1,9 +1,21 @@
 from elasticsearch import AsyncElasticsearch, helpers
+import pydantic
+from typing import Optional
+
+
+class RtaPlayer(pydantic.BaseModel):
+    user_id: int
+    user_world: str
+    user_name: str
+    last_known_rank: str
+    last_fetch_time: Optional[int] = None
 
 
 def player_index(season: str):
     return f'rta_players_{season}'
 
+def battle_index(season: str):
+    return f'rta_battles_{season}'
 
 class Indexer:
     client: AsyncElasticsearch
@@ -13,18 +25,22 @@ class Indexer:
 
     # BATTLE APIS
 
-    async def create_battle_index(self, index_name: str):
-        return await self.client.indices.create(index=index_name, mappings=rta_battle_mappings)
+    async def create_battle_index(self, season: str):
+        index_name = battle_index(season)
+        exists_check = await self.client.indices.exists(index=index_name)
+        exists = exists_check.meta.status == 200
+        if not exists:
+            await self.client.indices.create(index=index_name, mappings=rta_battle_mappings)
+
 
     # PLAYER APIS
 
     async def create_player_index(self, season: str):
-        index_name = f'rta_players_{season}'
+        index_name = player_index(season)
         exists_check = await self.client.indices.exists(index=index_name)
         exists = exists_check.meta.status == 200
         if not exists:
             await self.client.indices.create(index=index_name, mappings=rta_player_mappings)
-        return exists
 
     async def insert_players(self, players: list[dict], season: str):
         index = player_index(season)
@@ -42,6 +58,17 @@ class Indexer:
 
         response = await helpers.async_bulk(self.client, player_generator())
         print(f'insert_player - {response}')
+
+    async def get_users_to_refresh(self, num_players: int, season: str):
+        response = await self.client.search(
+            index=player_index(season),
+            size=num_players,
+            sort=[
+                {"last_fetch_time": {"order": "asc"}}
+            ]
+        )
+        results = response.body['hits']['hits']
+        return list(map(lambda r: RtaPlayer(**r["_source"]), results))
 
 
 rta_battle_mappings = {

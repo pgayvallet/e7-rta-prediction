@@ -6,15 +6,29 @@ from datetime import datetime
 from typing import TypedDict
 from rta_api import api as rta_api
 from rta_api.model.get_battle_list import GetBattleListResponseBattleListItem
+from src import Indexer
 
 raw_date_format = "%Y-%m-%d %H:%M:%S.%f"
 
 
-async def worker(name: str, queue: asyncio.Queue):
+async def worker(name: str, queue: asyncio.Queue, indexer: Indexer):
     async with aiohttp.ClientSession() as session:
         while True:
             # Get a "work item" out of the queue.
-            task = await queue.get()
+            player = await queue.get()
+
+            response = await rta_api.get_battle_list(
+                session,
+                user_id=player.user_id,
+                world_code=player.user_world
+            )
+            battle_list = response.result_body.battle_list
+            print(f'fetched battles for player {player.user_id} - {len(battle_list)} battles')
+
+            # battles = []
+            # for raw_battle in battle_list[0:1]:
+            #   battle = convert_raw_battle(raw_battle)
+            #   battles.append(battle)
 
             # Notify the queue that the "work item" has been processed.
             queue.task_done()
@@ -34,6 +48,28 @@ async def sync_player_battles(user_id: int,
             # print(json.dumps(battle, indent=2))
         return battles
 
+
+async def sync_players_battles(indexer: Indexer,
+                               players: list["RtaPlayer"],
+                               num_worker: int = 3):
+    queue = asyncio.Queue()
+    for player in players:
+        queue.put_nowait(player)
+
+    # Create the worker tasks to process the queue concurrently.
+    tasks = []
+    for i in range(num_worker):
+        task = asyncio.create_task(worker(f'worker-{i}', queue, indexer))
+        tasks.append(task)
+
+    # Wait until the queue is fully processed.
+    await queue.join()
+
+    # Cancel our worker tasks.
+    for task in tasks:
+        task.cancel()
+    # Wait until all worker tasks are cancelled.
+    await asyncio.gather(*tasks, return_exceptions=True)
 
 class RtaBattle(TypedDict):
     p1_id: int
