@@ -18,7 +18,33 @@ async def main():
     client = create_client()
     indexer = Indexer(client=client)
 
-    await commands.sync_hero_list()
+    await indexer.create_player_index(season='pvp_rta_ss12')
+    # await indexer.insert_players([
+    #    {"id": 192119856, "world": "world_eu"},
+    #    {"id": 71212252, "world": "world_asia"}
+    # ], 'pvp_rta_ss12')
+
+    players = await commands.fetch_player_list(
+        destination_file="./data/users.json",
+        num_worker=3,
+        max_users=1000,
+        initial_recommend_count=5)
+
+    def map_player(player):
+        return {
+            "id": player["user_id"],
+            "name": player["user_name"],
+            "world": player["world_code"]
+        }
+
+    await indexer.insert_players(
+        list(map(map_player, players.values())),
+        'pvp_rta_ss12'
+    )
+
+    await client.close()
+
+    ## await commands.sync_hero_list()
 
     return
 

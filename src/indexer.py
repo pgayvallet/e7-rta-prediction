@@ -1,4 +1,8 @@
-from elasticsearch import AsyncElasticsearch
+from elasticsearch import AsyncElasticsearch, helpers
+
+
+def player_index(season: str):
+    return f'rta_players_{season}'
 
 
 class Indexer:
@@ -7,8 +11,37 @@ class Indexer:
     def __init__(self, client: AsyncElasticsearch):
         self.client = client
 
-    async def create_index(self, index_name: str):
+    # BATTLE APIS
+
+    async def create_battle_index(self, index_name: str):
         return await self.client.indices.create(index=index_name, mappings=rta_battle_mappings)
+
+    # PLAYER APIS
+
+    async def create_player_index(self, season: str):
+        index_name = f'rta_players_{season}'
+        exists_check = await self.client.indices.exists(index=index_name)
+        exists = exists_check.meta.status == 200
+        if not exists:
+            await self.client.indices.create(index=index_name, mappings=rta_player_mappings)
+        return exists
+
+    async def insert_players(self, players: list[dict], season: str):
+        index = player_index(season)
+
+        def player_generator():
+            for player in players:
+                yield {
+                    "_index": index,
+                    "_id": f'{player["id"]}_{player["world"]}',
+                    "user_id": player["id"],
+                    "user_name": player["name"],
+                    "user_world": player["world"],
+                    "last_known_rank": player.get("rank", None)
+                }
+
+        response = await helpers.async_bulk(self.client, player_generator())
+        print(f'insert_player - {response}')
 
 
 rta_battle_mappings = {
@@ -55,5 +88,16 @@ rta_battle_mappings = {
         "p2_pick3": {"type": "keyword"},
         "p2_pick4": {"type": "keyword"},
         "p2_pick5": {"type": "keyword"},
+    }
+}
+
+rta_player_mappings = {
+    "dynamic": "strict",
+    "properties": {
+        "user_id": {"type": "long"},
+        "user_world": {"type": "keyword"},
+        "user_name": {"type": "keyword"},
+        "last_known_rank": {"type": "keyword"},
+        "last_fetch_time": {"type": "date"},
     }
 }
