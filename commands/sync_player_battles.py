@@ -3,54 +3,59 @@ import aiohttp
 import json
 import math
 from datetime import datetime
-from typing import TypedDict
+import time
+
 from rta_api import api as rta_api
 from rta_api.model.get_battle_list import GetBattleListResponseBattleListItem
 from src import Indexer
+from src.model import RtaBattle, RtaPlayer
 
 raw_date_format = "%Y-%m-%d %H:%M:%S.%f"
 
 
-async def worker(name: str, queue: asyncio.Queue, indexer: Indexer):
+async def worker(name: str, queue: asyncio.Queue, indexer: Indexer, season: str):
     async with aiohttp.ClientSession() as session:
         while True:
             # Get a "work item" out of the queue.
-            player = await queue.get()
+            player: RtaPlayer = await queue.get()
 
-            response = await rta_api.get_battle_list(
-                session,
-                user_id=player.user_id,
-                world_code=player.user_world
-            )
-            battle_list = response.result_body.battle_list
-            print(f'fetched battles for player {player.user_id} - {len(battle_list)} battles')
+            try:
+                response = await rta_api.get_battle_list(
+                    session,
+                    user_id=player.user_id,
+                    world_code=player.user_world
+                )
+                battle_list = response.result_body.battle_list
 
-            # battles = []
-            # for raw_battle in battle_list[0:1]:
-            #   battle = convert_raw_battle(raw_battle)
-            #   battles.append(battle)
+                battles = list(map(convert_raw_battle, battle_list))
 
-            # Notify the queue that the "work item" has been processed.
-            queue.task_done()
+                # TODO: check error, e.g 79084216 or 104467101 - max() arg is an empty sequence
 
+                # TODO: filter on allowed ranks
+                # TODO: fetch user to check last_updated_battle_id and filter
+                # TODO: also update last_known_rank
 
-async def sync_player_battles(user_id: int,
-                              world_code: str):
-    # Create a queue that we will use to store our "workload".
-    # queue = asyncio.Queue()
-    async with aiohttp.ClientSession() as session:
-        response = await rta_api.get_battle_list(session, user_id=user_id, world_code=world_code)
-        battle_list = response.result_body.battle_list
-        battles = []
-        for raw_battle in battle_list[0:1]:
-            battle = convert_raw_battle(raw_battle)
-            battles.append(battle)
-            # print(json.dumps(battle, indent=2))
-        return battles
+                max_battle_id = max(list(map(lambda battle: battle['battle_id'], battles)))
+
+                await indexer.insert_battles(battles, season)
+                await indexer.set_player_updated(
+                    user_id=player.user_id,
+                    user_world=player.user_world,
+                    season=season,
+                    date=round(time.time() * 1000),
+                    last_updated_battle=max_battle_id)
+
+                print(f'fetched battles for player {player.user_id} - {len(battle_list)} battles')
+            except Exception as e:
+                print(f'error updating user {player.user_id}: {e}')
+            finally:
+                # Notify the queue that the "work item" has been processed.
+                queue.task_done()
 
 
 async def sync_players_battles(indexer: Indexer,
-                               players: list["RtaPlayer"],
+                               season: str,
+                               players: list[RtaPlayer],
                                num_worker: int = 3):
     queue = asyncio.Queue()
     for player in players:
@@ -59,7 +64,7 @@ async def sync_players_battles(indexer: Indexer,
     # Create the worker tasks to process the queue concurrently.
     tasks = []
     for i in range(num_worker):
-        task = asyncio.create_task(worker(f'worker-{i}', queue, indexer))
+        task = asyncio.create_task(worker(f'worker-{i}', queue, indexer, season))
         tasks.append(task)
 
     # Wait until the queue is fully processed.
@@ -70,54 +75,6 @@ async def sync_players_battles(indexer: Indexer,
         task.cancel()
     # Wait until all worker tasks are cancelled.
     await asyncio.gather(*tasks, return_exceptions=True)
-
-class RtaBattle(TypedDict):
-    p1_id: int
-    p1_world: str
-    p1_grade: str
-
-    p2_id: int
-    p2_world: str
-    p2_grade: str
-
-    battle_id: int
-    season_code: str
-    # timestamp
-    battle_date: int
-    turn_count: int
-
-    p1_win: bool
-    p2_win: bool
-    p1_first_pick: bool
-    p2_first_pick: bool
-
-    prebans: list[str]
-    p1_prebans: list[str]
-    p2_prebans: list[str]
-
-    # The p1 character that was banned (by p2) and did not play
-    p1_postban: str
-    # The p2 character that was banned (by p1) and did not play
-    p2_postban: str
-
-    p1_picks: list[str]
-    p1_pick1: str
-    p1_pick2: str
-    p1_pick3: str
-    p1_pick4: str
-    p1_pick5: str
-
-    p2_picks: list[str]
-    p2_pick1: str
-    p2_pick2: str
-    p2_pick3: str
-    p2_pick4: str
-    p2_pick5: str
-
-    # position of the p1 postban (banned by p2), range 1-5
-    p1_postban_position: int
-    # position of the p2 postban (banned by p1), range 1-5
-    p2_postban_position: int
 
 
 def convert_raw_battle(raw: GetBattleListResponseBattleListItem) -> 'RtaBattle':
@@ -148,7 +105,7 @@ def convert_raw_battle(raw: GetBattleListResponseBattleListItem) -> 'RtaBattle':
         "battle_id": int(raw.battle_seq),
         "season_code": raw.season_code,
         "turn_count": raw.turn,
-        "battle_date": math.floor(datetime.strptime(raw.battle_day, raw_date_format).timestamp()),
+        "battle_date": math.floor(datetime.strptime(raw.battle_day, raw_date_format).timestamp() * 1000),
 
         "p1_win": raw.iswin == 1,
         "p2_win": raw.iswin == 2,

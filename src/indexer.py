@@ -1,21 +1,14 @@
 from elasticsearch import AsyncElasticsearch, helpers
-import pydantic
-from typing import Optional
-
-
-class RtaPlayer(pydantic.BaseModel):
-    user_id: int
-    user_world: str
-    user_name: str
-    last_known_rank: str
-    last_fetch_time: Optional[int] = None
+from src.model import RtaPlayer, RtaBattle
 
 
 def player_index(season: str):
     return f'rta_players_{season}'
 
+
 def battle_index(season: str):
     return f'rta_battles_{season}'
+
 
 class Indexer:
     client: AsyncElasticsearch
@@ -32,6 +25,18 @@ class Indexer:
         if not exists:
             await self.client.indices.create(index=index_name, mappings=rta_battle_mappings)
 
+    async def insert_battles(self, battles: list[RtaBattle], season: str):
+        index_name = battle_index(season)
+
+        def bulk_generator():
+            for battle in battles:
+                yield {
+                    "_index": index_name,
+                    "_id": battle['battle_id'],
+                    "_source": battle
+                }
+
+        await helpers.async_bulk(self.client, bulk_generator())
 
     # PLAYER APIS
 
@@ -53,18 +58,30 @@ class Indexer:
                     "user_id": player["id"],
                     "user_name": player["name"],
                     "user_world": player["world"],
-                    "last_known_rank": player.get("rank", None)
+                    "last_known_rank": player.get("rank", None),
+                    "last_update_time": 0,
+                    "last_updated_battle_id": 0,
                 }
 
         response = await helpers.async_bulk(self.client, player_generator())
         print(f'insert_player - {response}')
+
+    async def set_player_updated(self, user_id: int, user_world: str, season: str, date: int, last_updated_battle: int):
+        index = player_index(season)
+        doc_id = f'{user_id}_{user_world}'
+        updated_attributes = {
+            "last_update_time": date,
+            "last_updated_battle_id": last_updated_battle,
+        }
+
+        await self.client.update(index=index, id=doc_id, doc=updated_attributes)
 
     async def get_users_to_refresh(self, num_players: int, season: str):
         response = await self.client.search(
             index=player_index(season),
             size=num_players,
             sort=[
-                {"last_fetch_time": {"order": "asc"}}
+                {"last_update_time": {"order": "asc"}}
             ]
         )
         results = response.body['hits']['hits']
@@ -125,6 +142,7 @@ rta_player_mappings = {
         "user_world": {"type": "keyword"},
         "user_name": {"type": "keyword"},
         "last_known_rank": {"type": "keyword"},
-        "last_fetch_time": {"type": "date"},
+        "last_update_time": {"type": "date"},
+        "last_updated_battle_id": {"type": "long"},
     }
 }
