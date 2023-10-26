@@ -25,7 +25,7 @@ async def main():
     await indexer.create_player_index(season=current_season)
     await indexer.create_battle_index(season=current_season)
 
-    players = await indexer.get_users_to_refresh(1, current_season)
+    players = await indexer.get_users_to_refresh(5, current_season)
     await commands.sync_players_battles(indexer, unit_registry, current_season, players, num_worker=3)
     await client.close()
     return

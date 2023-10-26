@@ -113,54 +113,60 @@ def convert_raw_battle(raw: GetBattleListResponseBattleListItem, unit_registry: 
     p1_postban_position = p1_pick_order.index(p1_postban.hero_code) + 1 if p1_postban else None
     p2_postban_position = p2_pick_order.index(p2_postban.hero_code) + 1 if p2_postban else None
 
+    battle_date = math.floor(datetime.strptime(raw.battle_day, raw_date_format).timestamp() * 1000)
+
     battle: dict = {
         "schema_version": 1,
-
-        "p1_id": raw.nicknameno,
-        "p1_world": raw.worldCode,
-        "p1_grade": raw.grade_code,
-
-        "p2_id": raw.matchPlayerNicknameno,
-        "p2_world": raw.enemy_world_code,
-        "p2_grade": raw.enemy_grade_code,
 
         "battle_id": int(raw.battle_seq),
         "season_code": raw.season_code,
         "turn_count": raw.turn,
-        "battle_date": math.floor(datetime.strptime(raw.battle_day, raw_date_format).timestamp() * 1000),
-
-        "p1_win": raw.iswin == 1,
-        "p2_win": raw.iswin == 2,
+        "battle_date": battle_date,
     }
+
+    reverse_players = p1_first_pick is None
+    p1_prefix = 'p2' if reverse_players else 'p1'
+    p2_prefix = 'p1' if reverse_players else 'p2'
+    
+    battle.update({
+        f'{p1_prefix}_id': raw.nicknameno,
+        f'{p1_prefix}_world': raw.worldCode,
+        f'{p1_prefix}_grade': raw.grade_code,
+        f'{p1_prefix}_win': raw.iswin == 1,
+        f'{p1_prefix}_first_pick': p1_first_pick is not None,
+
+        f'{p2_prefix}_id': raw.matchPlayerNicknameno,
+        f'{p2_prefix}_world': raw.enemy_world_code,
+        f'{p2_prefix}_grade': raw.enemy_grade_code,
+        f'{p2_prefix}_win': raw.iswin == 2,
+        f'{p2_prefix}_first_pick': p1_first_pick is None,
+    })
 
     all_prebans = list(set(raw.my_deck.preban_list + raw.enemy_deck.preban_list))
     battle["prebans"] = units_from_ids(all_prebans)
 
     battle.update({
-        "p1_prebans": units_from_ids(raw.my_deck.preban_list),
-        "p2_prebans": units_from_ids(raw.enemy_deck.preban_list),
+        f'{p1_prefix}_prebans': units_from_ids(raw.my_deck.preban_list),
+        f'{p1_prefix}_postban': unit_from_id(p1_postban.hero_code) if p1_postban is not None else None,
+        f'{p1_prefix}_postban_position': p1_postban_position,
 
-        "p1_postban": unit_from_id(p1_postban.hero_code) if p1_postban is not None else None,
-        "p1_postban_position": p1_postban_position,
-        "p2_postban": unit_from_id(p2_postban.hero_code) if p2_postban is not None else None,
-        "p2_postban_position": p2_postban_position,
-
-        "p1_first_pick": p1_first_pick is not None,
-        "p2_first_pick": p1_first_pick is None,
-
-        "p1_picks": units_from_ids(p1_pick_order),
-        "p2_picks": units_from_ids(p2_pick_order),
+        f'{p2_prefix}_prebans': units_from_ids(raw.enemy_deck.preban_list),
+        f'{p2_prefix}_postban': unit_from_id(p2_postban.hero_code) if p2_postban is not None else None,
+        f'{p2_prefix}_postban_position': p2_postban_position,
     })
+
+    battle[f'{p1_prefix}_picks'] = units_from_ids(p1_pick_order)
+    battle[f'{p2_prefix}_picks'] = units_from_ids(p2_pick_order)
 
     # p1_pick1 -> p1_pick5
     for n in range(0, 5):
         pick_id = p1_pick_order[n] if len(p1_pick_order) > n else None
-        battle[f'p1_pick{n+1}'] = unit_from_id(pick_id)
+        battle[f'{p1_prefix}_pick{n+1}'] = unit_from_id(pick_id)
 
     # p2_pick1 -> p2_pick5
     for n in range(0, 5):
         pick_id = p2_pick_order[n] if len(p2_pick_order) > n else None
-        battle[f'p2_pick{n+1}'] = unit_from_id(pick_id)
+        battle[f'{p2_prefix}_pick{n+1}'] = unit_from_id(pick_id)
 
     return RtaBattle(**battle)
 

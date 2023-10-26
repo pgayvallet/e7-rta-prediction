@@ -36,11 +36,11 @@ class RtaBattle(pydantic.BaseModel):
     # The p1 character that was banned (by p2) and did not play
     p1_postban: Optional[RtaBattleUnit] = None
     # position of the p1 postban (banned by p2), range 1-5
-    p1_postban_position: int
+    p1_postban_position: Optional[int] = None
     # The p2 character that was banned (by p1) and did not play
     p2_postban: Optional[RtaBattleUnit] = None
     # position of the p2 postban (banned by p1), range 1-5
-    p2_postban_position: int
+    p2_postban_position: Optional[int] = None
 
     p1_picks: list[RtaBattleUnit]
     p1_pick1: Optional[RtaBattleUnit] = None
