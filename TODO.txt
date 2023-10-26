@@ -1,0 +1,17 @@
+
+
+- process / ingest initial CR position? (energyGauge)
+
+- more parsing of team battle info ? (sets, equipments, artefact)
+
+- store character name in addition to code in battles for visualizations
+
+- update last_known_rank when fetching user's battles
+
+- filter battles based on both player's rank when ingestion (at least one must be in allowed ranks)
+
+- scan for additional users to add to the queue when parsing one user's battles
+
+- change the battle parsing logic to always ingest first-pick player as p_1
+
+- add "per-step" character list

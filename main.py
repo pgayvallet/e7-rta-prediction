@@ -1,6 +1,7 @@
 import asyncio
 import commands
-from src import create_client, Indexer
+import os
+from src import create_client, Indexer, UnitRegistry
 
 
 async def main():
@@ -12,6 +13,11 @@ async def main():
         initial_recommend_count=5)
     """
 
+    ## await commands.sync_unit_list()
+
+    units_file_path = os.path.join(os.getcwd(), "./data/static/units.json")
+    unit_registry = UnitRegistry(filepath=units_file_path)
+
     current_season = 'pvp_rta_ss12'
     client = create_client()
     indexer = Indexer(client=client)
@@ -20,7 +26,7 @@ async def main():
     await indexer.create_battle_index(season=current_season)
 
     players = await indexer.get_users_to_refresh(1, current_season)
-    await commands.sync_players_battles(indexer, current_season, players, num_worker=3)
+    await commands.sync_players_battles(indexer, unit_registry, current_season, players, num_worker=3)
     await client.close()
     return
 

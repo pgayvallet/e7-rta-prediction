@@ -1,0 +1,2137 @@
+{
+  "c0001": {
+    "id": "c0001",
+    "name": "Mercedes",
+    "grade": "4",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c0002": {
+    "id": "c0002",
+    "name": "Mercedes",
+    "grade": "4",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1001": {
+    "id": "c1001",
+    "name": "Ras",
+    "grade": "3",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c1002": {
+    "id": "c1002",
+    "name": "Cecilia",
+    "grade": "5",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c1003": {
+    "id": "c1003",
+    "name": "Rose",
+    "grade": "4",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c1004": {
+    "id": "c1004",
+    "name": "Silk",
+    "grade": "4",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1005": {
+    "id": "c1005",
+    "name": "Mercedes",
+    "grade": "4",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1006": {
+    "id": "c1006",
+    "name": "Kise",
+    "grade": "5",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c1007": {
+    "id": "c1007",
+    "name": "Vildred",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c1008": {
+    "id": "c1008",
+    "name": "Armin",
+    "grade": "4",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c1009": {
+    "id": "c1009",
+    "name": "Charlotte",
+    "grade": "5",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c1010": {
+    "id": "c1010",
+    "name": "Zerato",
+    "grade": "4",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1011": {
+    "id": "c1011",
+    "name": "Karin",
+    "grade": "4",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c1012": {
+    "id": "c1012",
+    "name": "Corvus",
+    "grade": "4",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1013": {
+    "id": "c1013",
+    "name": "Cartuja",
+    "grade": "4",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1014": {
+    "id": "c1014",
+    "name": "Cidd",
+    "grade": "4",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c1015": {
+    "id": "c1015",
+    "name": "Baal & Sezan",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1016": {
+    "id": "c1016",
+    "name": "Yufine",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1017": {
+    "id": "c1017",
+    "name": "Achates",
+    "grade": "4",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c1018": {
+    "id": "c1018",
+    "name": "Aither",
+    "grade": "3",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c1019": {
+    "id": "c1019",
+    "name": "Ravi",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1020": {
+    "id": "c1020",
+    "name": "Schuri",
+    "grade": "4",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1021": {
+    "id": "c1021",
+    "name": "Dingo",
+    "grade": "4",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1022": {
+    "id": "c1022",
+    "name": "Ruele of Light",
+    "grade": "5",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c1023": {
+    "id": "c1023",
+    "name": "Kayron",
+    "grade": "5",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c1024": {
+    "id": "c1024",
+    "name": "Iseria",
+    "grade": "5",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1027": {
+    "id": "c1027",
+    "name": "Charles",
+    "grade": "5",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c1028": {
+    "id": "c1028",
+    "name": "Clarissa",
+    "grade": "4",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1029": {
+    "id": "c1029",
+    "name": "Leo",
+    "grade": "4",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1030": {
+    "id": "c1030",
+    "name": "Yuna",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c1031": {
+    "id": "c1031",
+    "name": "Lots",
+    "grade": "4",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c1032": {
+    "id": "c1032",
+    "name": "Maya",
+    "grade": "4",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c1033": {
+    "id": "c1033",
+    "name": "Coli",
+    "grade": "4",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c1034": {
+    "id": "c1034",
+    "name": "Straze",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c1035": {
+    "id": "c1035",
+    "name": "Purrgis",
+    "grade": "4",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1036": {
+    "id": "c1036",
+    "name": "Crozet",
+    "grade": "4",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c1037": {
+    "id": "c1037",
+    "name": "Dominiel",
+    "grade": "4",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1038": {
+    "id": "c1038",
+    "name": "Sez",
+    "grade": "5",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c1039": {
+    "id": "c1039",
+    "name": "Haste",
+    "grade": "5",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c1040": {
+    "id": "c1040",
+    "name": "Serila",
+    "grade": "4",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1042": {
+    "id": "c1042",
+    "name": "Tywin",
+    "grade": "5",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c1043": {
+    "id": "c1043",
+    "name": "Romann",
+    "grade": "4",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1044": {
+    "id": "c1044",
+    "name": "Mui",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1046": {
+    "id": "c1046",
+    "name": "Lidica",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1047": {
+    "id": "c1047",
+    "name": "Ken",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1048": {
+    "id": "c1048",
+    "name": "Aramintha",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1049": {
+    "id": "c1049",
+    "name": "Chloe",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1050": {
+    "id": "c1050",
+    "name": "Tenebria",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1053": {
+    "id": "c1053",
+    "name": "Basar",
+    "grade": "5",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c1054": {
+    "id": "c1054",
+    "name": "Rin",
+    "grade": "4",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c1062": {
+    "id": "c1062",
+    "name": "Angelica",
+    "grade": "4",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c1065": {
+    "id": "c1065",
+    "name": "Surin",
+    "grade": "4",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c1066": {
+    "id": "c1066",
+    "name": "Luna",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1067": {
+    "id": "c1067",
+    "name": "Tamarinne",
+    "grade": "5",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c1069": {
+    "id": "c1069",
+    "name": "Ludwig",
+    "grade": "5",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c1070": {
+    "id": "c1070",
+    "name": "Krau",
+    "grade": "5",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c1071": {
+    "id": "c1071",
+    "name": "Bellona",
+    "grade": "5",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1072": {
+    "id": "c1072",
+    "name": "Sigret",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1073": {
+    "id": "c1073",
+    "name": "Kawerik",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1074": {
+    "id": "c1074",
+    "name": "Violet",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c1076": {
+    "id": "c1076",
+    "name": "Diene",
+    "grade": "5",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c1079": {
+    "id": "c1079",
+    "name": "Cermia",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1080": {
+    "id": "c1080",
+    "name": "Pavel",
+    "grade": "5",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1081": {
+    "id": "c1081",
+    "name": "Cerise",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c1082": {
+    "id": "c1082",
+    "name": "Luluca",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1083": {
+    "id": "c1083",
+    "name": "Zeno",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1085": {
+    "id": "c1085",
+    "name": "Khawazu",
+    "grade": "4",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1086": {
+    "id": "c1086",
+    "name": "Khawana",
+    "grade": "4",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c1087": {
+    "id": "c1087",
+    "name": "Furious",
+    "grade": "4",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c1088": {
+    "id": "c1088",
+    "name": "Vivian",
+    "grade": "5",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c1089": {
+    "id": "c1089",
+    "name": "Lilias",
+    "grade": "5",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c1090": {
+    "id": "c1090",
+    "name": "Ray",
+    "grade": "5",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c1091": {
+    "id": "c1091",
+    "name": "Elena",
+    "grade": "5",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c1092": {
+    "id": "c1092",
+    "name": "Sol",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1093": {
+    "id": "c1093",
+    "name": "Baiken",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c1094": {
+    "id": "c1094",
+    "name": "Dizzy",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1095": {
+    "id": "c1095",
+    "name": "Lilibet",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1096": {
+    "id": "c1096",
+    "name": "Melissa",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1097": {
+    "id": "c1097",
+    "name": "Bomb Model Kanna",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1099": {
+    "id": "c1099",
+    "name": "Command Model Laika",
+    "grade": "5",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1100": {
+    "id": "c1100",
+    "name": "Alencia",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1101": {
+    "id": "c1101",
+    "name": "Choux",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1102": {
+    "id": "c1102",
+    "name": "Roana",
+    "grade": "5",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c1103": {
+    "id": "c1103",
+    "name": "Celine",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c1104": {
+    "id": "c1104",
+    "name": "Mort",
+    "grade": "5",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c1105": {
+    "id": "c1105",
+    "name": "Elphelt",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1106": {
+    "id": "c1106",
+    "name": "Senya",
+    "grade": "5",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c1107": {
+    "id": "c1107",
+    "name": "Kizuna AI",
+    "grade": "4",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c1108": {
+    "id": "c1108",
+    "name": "Ervalen",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c1109": {
+    "id": "c1109",
+    "name": "Landy",
+    "grade": "5",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c1110": {
+    "id": "c1110",
+    "name": "Flan",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c1111": {
+    "id": "c1111",
+    "name": "Eda",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1112": {
+    "id": "c1112",
+    "name": "Politis",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1113": {
+    "id": "c1113",
+    "name": "Ilynav",
+    "grade": "5",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c1114": {
+    "id": "c1114",
+    "name": "Rem",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1115": {
+    "id": "c1115",
+    "name": "Ram",
+    "grade": "5",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c1116": {
+    "id": "c1116",
+    "name": "Emilia",
+    "grade": "5",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c1117": {
+    "id": "c1117",
+    "name": "Belian",
+    "grade": "5",
+    "role": "knight",
+    "element": "light"
+  },
+  "c1118": {
+    "id": "c1118",
+    "name": "Ran",
+    "grade": "5",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c1119": {
+    "id": "c1119",
+    "name": "Zahhak",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1121": {
+    "id": "c1121",
+    "name": "Rimuru",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1122": {
+    "id": "c1122",
+    "name": "Milim",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1123": {
+    "id": "c1123",
+    "name": "Shuna",
+    "grade": "5",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c1124": {
+    "id": "c1124",
+    "name": "Arunka",
+    "grade": "5",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c1125": {
+    "id": "c1125",
+    "name": "Peira",
+    "grade": "5",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c1126": {
+    "id": "c1126",
+    "name": "Lua",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c1127": {
+    "id": "c1127",
+    "name": "Taeyou",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c1128": {
+    "id": "c1128",
+    "name": "Hwayoung",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1129": {
+    "id": "c1129",
+    "name": "Aria",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c1130": {
+    "id": "c1130",
+    "name": "Jack-O'",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1131": {
+    "id": "c1131",
+    "name": "Yulha",
+    "grade": "5",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c1132": {
+    "id": "c1132",
+    "name": "Sharun",
+    "grade": "5",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c1133": {
+    "id": "c1133",
+    "name": "Zio",
+    "grade": "5",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c1134": {
+    "id": "c1134",
+    "name": "Edward Elric",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1135": {
+    "id": "c1135",
+    "name": "Roy Mustang",
+    "grade": "5",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c1136": {
+    "id": "c1136",
+    "name": "Riza Hawkeye",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c1137": {
+    "id": "c1137",
+    "name": "ae-KARINA",
+    "grade": "5",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c1138": {
+    "id": "c1138",
+    "name": "ae-GISELLE",
+    "grade": "5",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c1139": {
+    "id": "c1139",
+    "name": "ae-WINTER",
+    "grade": "5",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c1140": {
+    "id": "c1140",
+    "name": "ae-NINGNING",
+    "grade": "5",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c1141": {
+    "id": "c1141",
+    "name": "Beehoo",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1142": {
+    "id": "c1142",
+    "name": "Eligos",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1143": {
+    "id": "c1143",
+    "name": "Amid",
+    "grade": "5",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c1144": {
+    "id": "c1144",
+    "name": "Abigail",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1145": {
+    "id": "c1145",
+    "name": "Brieg",
+    "grade": "5",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c1146": {
+    "id": "c1146",
+    "name": "Benimaru",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c1150": {
+    "id": "c1150",
+    "name": "Veronica",
+    "grade": "4",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c1151": {
+    "id": "c1151",
+    "name": "Nahkwol",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c2002": {
+    "id": "c2002",
+    "name": "Fallen Cecilia",
+    "grade": "5",
+    "role": "knight",
+    "element": "dark"
+  },
+  "c2003": {
+    "id": "c2003",
+    "name": "Shadow Rose",
+    "grade": "4",
+    "role": "knight",
+    "element": "dark"
+  },
+  "c2004": {
+    "id": "c2004",
+    "name": "Wanderer Silk",
+    "grade": "4",
+    "role": "ranger",
+    "element": "light"
+  },
+  "c2005": {
+    "id": "c2005",
+    "name": "Celestial Mercedes",
+    "grade": "4",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2006": {
+    "id": "c2006",
+    "name": "Judge Kise",
+    "grade": "5",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c2007": {
+    "id": "c2007",
+    "name": "Arbiter Vildred",
+    "grade": "5",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2008": {
+    "id": "c2008",
+    "name": "Crimson Armin",
+    "grade": "4",
+    "role": "knight",
+    "element": "light"
+  },
+  "c2009": {
+    "id": "c2009",
+    "name": "Little Queen Charlotte",
+    "grade": "5",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c2010": {
+    "id": "c2010",
+    "name": "Champion Zerato",
+    "grade": "4",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2011": {
+    "id": "c2011",
+    "name": "Blood Blade Karin",
+    "grade": "4",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2012": {
+    "id": "c2012",
+    "name": "Dark Corvus",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2013": {
+    "id": "c2013",
+    "name": "Assassin Cartuja",
+    "grade": "4",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2014": {
+    "id": "c2014",
+    "name": "Assassin Cidd",
+    "grade": "4",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2015": {
+    "id": "c2015",
+    "name": "Sage Baal & Sezan",
+    "grade": "5",
+    "role": "mage",
+    "element": "light"
+  },
+  "c2017": {
+    "id": "c2017",
+    "name": "Shooting Star Achates",
+    "grade": "4",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c2018": {
+    "id": "c2018",
+    "name": "Guider Aither",
+    "grade": "4",
+    "role": "mage",
+    "element": "light"
+  },
+  "c2019": {
+    "id": "c2019",
+    "name": "Apocalypse Ravi",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2020": {
+    "id": "c2020",
+    "name": "Watcher Schuri",
+    "grade": "4",
+    "role": "ranger",
+    "element": "light"
+  },
+  "c2021": {
+    "id": "c2021",
+    "name": "Blaze Dingo",
+    "grade": "4",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c2022": {
+    "id": "c2022",
+    "name": "Destina",
+    "grade": "5",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c2023": {
+    "id": "c2023",
+    "name": "Twisted Eidolon Kayron",
+    "grade": "5",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c2024": {
+    "id": "c2024",
+    "name": "Briar Witch Iseria",
+    "grade": "5",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c2027": {
+    "id": "c2027",
+    "name": "Closer Charles",
+    "grade": "5",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2028": {
+    "id": "c2028",
+    "name": "Kitty Clarissa",
+    "grade": "4",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2029": {
+    "id": "c2029",
+    "name": "Roaming Warrior Leo",
+    "grade": "4",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c2031": {
+    "id": "c2031",
+    "name": "Auxiliary Lots",
+    "grade": "4",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2032": {
+    "id": "c2032",
+    "name": "Fighter Maya",
+    "grade": "4",
+    "role": "knight",
+    "element": "light"
+  },
+  "c2033": {
+    "id": "c2033",
+    "name": "Assassin Coli",
+    "grade": "4",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2035": {
+    "id": "c2035",
+    "name": "General Purrgis",
+    "grade": "4",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c2036": {
+    "id": "c2036",
+    "name": "Troublemaker Crozet",
+    "grade": "4",
+    "role": "knight",
+    "element": "dark"
+  },
+  "c2037": {
+    "id": "c2037",
+    "name": "Challenger Dominiel",
+    "grade": "4",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2038": {
+    "id": "c2038",
+    "name": "Specimen Sez",
+    "grade": "5",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c2039": {
+    "id": "c2039",
+    "name": "Blood Moon Haste",
+    "grade": "5",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c2042": {
+    "id": "c2042",
+    "name": "Ambitious Tywin",
+    "grade": "5",
+    "role": "knight",
+    "element": "light"
+  },
+  "c2043": {
+    "id": "c2043",
+    "name": "Benevolent Romann",
+    "grade": "4",
+    "role": "mage",
+    "element": "light"
+  },
+  "c2046": {
+    "id": "c2046",
+    "name": "Faithless Lidica",
+    "grade": "5",
+    "role": "ranger",
+    "element": "light"
+  },
+  "c2047": {
+    "id": "c2047",
+    "name": "Martial Artist Ken",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2048": {
+    "id": "c2048",
+    "name": "Silver Blade Aramintha",
+    "grade": "5",
+    "role": "mage",
+    "element": "light"
+  },
+  "c2049": {
+    "id": "c2049",
+    "name": "Maid Chloe",
+    "grade": "5",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c2050": {
+    "id": "c2050",
+    "name": "Specter Tenebria",
+    "grade": "5",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2053": {
+    "id": "c2053",
+    "name": "Desert Jewel Basar",
+    "grade": "5",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c2054": {
+    "id": "c2054",
+    "name": "Crescent Moon Rin",
+    "grade": "4",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2062": {
+    "id": "c2062",
+    "name": "Sinful Angelica",
+    "grade": "4",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c2065": {
+    "id": "c2065",
+    "name": "Tempest Surin",
+    "grade": "4",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c2070": {
+    "id": "c2070",
+    "name": "Last Rider Krau",
+    "grade": "5",
+    "role": "knight",
+    "element": "light"
+  },
+  "c2071": {
+    "id": "c2071",
+    "name": "Lone Crescent Bellona",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2072": {
+    "id": "c2072",
+    "name": "Operator Sigret",
+    "grade": "5",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c2073": {
+    "id": "c2073",
+    "name": "Mediator Kawerik",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2074": {
+    "id": "c2074",
+    "name": "Remnant Violet",
+    "grade": "5",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c2079": {
+    "id": "c2079",
+    "name": "Lionheart Cermia",
+    "grade": "5",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c2080": {
+    "id": "c2080",
+    "name": "Commander Pavel",
+    "grade": "5",
+    "role": "ranger",
+    "element": "light"
+  },
+  "c2082": {
+    "id": "c2082",
+    "name": "Top Model Luluca",
+    "grade": "5",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2085": {
+    "id": "c2085",
+    "name": "Inferno Khawazu",
+    "grade": "4",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2086": {
+    "id": "c2086",
+    "name": "Great Chief Khawana",
+    "grade": "4",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2087": {
+    "id": "c2087",
+    "name": "Peacemaker Furious",
+    "grade": "4",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c2088": {
+    "id": "c2088",
+    "name": "Sylvan Sage Vivian",
+    "grade": "5",
+    "role": "mage",
+    "element": "light"
+  },
+  "c2089": {
+    "id": "c2089",
+    "name": "Conqueror Lilias",
+    "grade": "5",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c2090": {
+    "id": "c2090",
+    "name": "Death Dealer Ray",
+    "grade": "5",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c2091": {
+    "id": "c2091",
+    "name": "Astromancer Elena",
+    "grade": "5",
+    "role": "ranger",
+    "element": "light"
+  },
+  "c2095": {
+    "id": "c2095",
+    "name": "Designer Lilibet",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2099": {
+    "id": "c2099",
+    "name": "Architect Laika",
+    "grade": "5",
+    "role": "mage",
+    "element": "light"
+  },
+  "c2101": {
+    "id": "c2101",
+    "name": "Urban Shadow Choux",
+    "grade": "5",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c2102": {
+    "id": "c2102",
+    "name": "Requiem Roana",
+    "grade": "5",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c2103": {
+    "id": "c2103",
+    "name": "Spirit Eye Celine",
+    "grade": "5",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c2109": {
+    "id": "c2109",
+    "name": "Navy Captain Landy",
+    "grade": "5",
+    "role": "knight",
+    "element": "light"
+  },
+  "c2110": {
+    "id": "c2110",
+    "name": "Pirate Captain Flan",
+    "grade": "5",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c2111": {
+    "id": "c2111",
+    "name": "Solitaria of the Snow",
+    "grade": "5",
+    "role": "mage",
+    "element": "light"
+  },
+  "c3001": {
+    "id": "c3001",
+    "name": "Butcher Corps Inquisitor",
+    "grade": "3",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c3002": {
+    "id": "c3002",
+    "name": "Taranor Royal Guard",
+    "grade": "3",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c3003": {
+    "id": "c3003",
+    "name": "Kluri",
+    "grade": "3",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c3004": {
+    "id": "c3004",
+    "name": "Arowell",
+    "grade": "3",
+    "role": "knight",
+    "element": "light"
+  },
+  "c3005": {
+    "id": "c3005",
+    "name": "Pyllis",
+    "grade": "3",
+    "role": "knight",
+    "element": "dark"
+  },
+  "c3006": {
+    "id": "c3006",
+    "name": "Bask",
+    "grade": "3",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c3011": {
+    "id": "c3011",
+    "name": "Judith",
+    "grade": "3",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c3012": {
+    "id": "c3012",
+    "name": "Alexa",
+    "grade": "3",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c3013": {
+    "id": "c3013",
+    "name": "Roozid",
+    "grade": "3",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c3014": {
+    "id": "c3014",
+    "name": "Mirsa",
+    "grade": "3",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c3015": {
+    "id": "c3015",
+    "name": "Sven",
+    "grade": "3",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c3021": {
+    "id": "c3021",
+    "name": "Tieria",
+    "grade": "3",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c3022": {
+    "id": "c3022",
+    "name": "Enott",
+    "grade": "3",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c3023": {
+    "id": "c3023",
+    "name": "Helga",
+    "grade": "3",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c3024": {
+    "id": "c3024",
+    "name": "Gunther",
+    "grade": "3",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c3025": {
+    "id": "c3025",
+    "name": "Church of Ilryos Axe",
+    "grade": "3",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c3026": {
+    "id": "c3026",
+    "name": "Free Spirit Tieria",
+    "grade": "4",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c3031": {
+    "id": "c3031",
+    "name": "Azalea",
+    "grade": "3",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c3032": {
+    "id": "c3032",
+    "name": "Taranor Guard",
+    "grade": "3",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c3033": {
+    "id": "c3033",
+    "name": "Mucacha",
+    "grade": "3",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c3034": {
+    "id": "c3034",
+    "name": "Rikoris",
+    "grade": "3",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c3035": {
+    "id": "c3035",
+    "name": "Lorina",
+    "grade": "3",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c3041": {
+    "id": "c3041",
+    "name": "Hazel",
+    "grade": "3",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c3042": {
+    "id": "c3042",
+    "name": "Montmorancy",
+    "grade": "3",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c3043": {
+    "id": "c3043",
+    "name": "Adlay",
+    "grade": "3",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c3044": {
+    "id": "c3044",
+    "name": "Doris",
+    "grade": "3",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c3045": {
+    "id": "c3045",
+    "name": "Otillie",
+    "grade": "3",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c3051": {
+    "id": "c3051",
+    "name": "Carrot",
+    "grade": "3",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c3052": {
+    "id": "c3052",
+    "name": "Jena",
+    "grade": "3",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c3053": {
+    "id": "c3053",
+    "name": "Jecht",
+    "grade": "3",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c3054": {
+    "id": "c3054",
+    "name": "Elson",
+    "grade": "3",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c3055": {
+    "id": "c3055",
+    "name": "Hurado",
+    "grade": "3",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c3061": {
+    "id": "c3061",
+    "name": "Nemunas",
+    "grade": "3",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c3062": {
+    "id": "c3062",
+    "name": "Rima",
+    "grade": "3",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c3063": {
+    "id": "c3063",
+    "name": "Kiris",
+    "grade": "3",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c3064": {
+    "id": "c3064",
+    "name": "Celeste",
+    "grade": "3",
+    "role": "ranger",
+    "element": "light"
+  },
+  "c3065": {
+    "id": "c3065",
+    "name": "Wanda",
+    "grade": "3",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c3071": {
+    "id": "c3071",
+    "name": "Carmainerose",
+    "grade": "3",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c3072": {
+    "id": "c3072",
+    "name": "Mistychain",
+    "grade": "3",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c3073": {
+    "id": "c3073",
+    "name": "Pearlhorizon",
+    "grade": "3",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c3074": {
+    "id": "c3074",
+    "name": "Gloomyrain",
+    "grade": "3",
+    "role": "mage",
+    "element": "light"
+  },
+  "c3075": {
+    "id": "c3075",
+    "name": "Requiemroar",
+    "grade": "3",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c3084": {
+    "id": "c3084",
+    "name": "Kikirat v2",
+    "grade": "3",
+    "role": "knight",
+    "element": "light"
+  },
+  "c3091": {
+    "id": "c3091",
+    "name": "Hataan",
+    "grade": "3",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c3092": {
+    "id": "c3092",
+    "name": "Lena",
+    "grade": "3",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c3093": {
+    "id": "c3093",
+    "name": "Ains",
+    "grade": "3",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c3094": {
+    "id": "c3094",
+    "name": "Eaton",
+    "grade": "3",
+    "role": "knight",
+    "element": "light"
+  },
+  "c3095": {
+    "id": "c3095",
+    "name": "Batisse",
+    "grade": "3",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c3101": {
+    "id": "c3101",
+    "name": "Godmother",
+    "grade": "3",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c3102": {
+    "id": "c3102",
+    "name": "Ian",
+    "grade": "3",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c3103": {
+    "id": "c3103",
+    "name": "Glenn",
+    "grade": "3",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c3104": {
+    "id": "c3104",
+    "name": "Sonia",
+    "grade": "3",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c3105": {
+    "id": "c3105",
+    "name": "Ainos",
+    "grade": "3",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c3113": {
+    "id": "c3113",
+    "name": "Lucy",
+    "grade": "3",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c3121": {
+    "id": "c3121",
+    "name": "Melany",
+    "grade": "3",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c3122": {
+    "id": "c3122",
+    "name": "Helen",
+    "grade": "3",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c3123": {
+    "id": "c3123",
+    "name": "Christy",
+    "grade": "3",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c3124": {
+    "id": "c3124",
+    "name": "Camilla",
+    "grade": "3",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c3125": {
+    "id": "c3125",
+    "name": "Penelope",
+    "grade": "3",
+    "role": "assassin",
+    "element": "dark"
+  },
+  "c3131": {
+    "id": "c3131",
+    "name": "Januta",
+    "grade": "3",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c3132": {
+    "id": "c3132",
+    "name": "Muwi",
+    "grade": "3",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c3133": {
+    "id": "c3133",
+    "name": "Orte",
+    "grade": "3",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c3134": {
+    "id": "c3134",
+    "name": "Yoonryoung",
+    "grade": "3",
+    "role": "knight",
+    "element": "light"
+  },
+  "c3135": {
+    "id": "c3135",
+    "name": "Hasol",
+    "grade": "3",
+    "role": "knight",
+    "element": "dark"
+  },
+  "c3143": {
+    "id": "c3143",
+    "name": "Adin",
+    "grade": "3",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c3151": {
+    "id": "c3151",
+    "name": "Juni",
+    "grade": "3",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c3152": {
+    "id": "c3152",
+    "name": "Talaz",
+    "grade": "3",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c3153": {
+    "id": "c3153",
+    "name": "Lilka",
+    "grade": "3",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c3154": {
+    "id": "c3154",
+    "name": "Talia",
+    "grade": "3",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c3155": {
+    "id": "c3155",
+    "name": "Suthan",
+    "grade": "3",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c4001": {
+    "id": "c4001",
+    "name": "Chaos Inquisitor",
+    "grade": "3",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c4003": {
+    "id": "c4003",
+    "name": "Falconer Kluri",
+    "grade": "3",
+    "role": "knight",
+    "element": "wind"
+  },
+  "c4004": {
+    "id": "c4004",
+    "name": "Unbound Knight Arowell",
+    "grade": "3",
+    "role": "knight",
+    "element": "light"
+  },
+  "c4005": {
+    "id": "c4005",
+    "name": "Shadow Knight Pyllis",
+    "grade": "3",
+    "role": "knight",
+    "element": "dark"
+  },
+  "c4012": {
+    "id": "c4012",
+    "name": "Summer's Disciple Alexa",
+    "grade": "3",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c4013": {
+    "id": "c4013",
+    "name": "Righteous Thief Roozid",
+    "grade": "3",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c4023": {
+    "id": "c4023",
+    "name": "Mercenary Helga",
+    "grade": "3",
+    "role": "warrior",
+    "element": "wind"
+  },
+  "c4025": {
+    "id": "c4025",
+    "name": "Chaos Sect Axe",
+    "grade": "3",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c4034": {
+    "id": "c4034",
+    "name": "Captain Rikoris",
+    "grade": "3",
+    "role": "warrior",
+    "element": "light"
+  },
+  "c4035": {
+    "id": "c4035",
+    "name": "Commander Lorina",
+    "grade": "3",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c4041": {
+    "id": "c4041",
+    "name": "Mascot Hazel",
+    "grade": "3",
+    "role": "manauser",
+    "element": "fire"
+  },
+  "c4042": {
+    "id": "c4042",
+    "name": "Angelic Montmorancy",
+    "grade": "3",
+    "role": "manauser",
+    "element": "ice"
+  },
+  "c4044": {
+    "id": "c4044",
+    "name": "Magic Scholar Doris",
+    "grade": "3",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c4051": {
+    "id": "c4051",
+    "name": "Researcher Carrot",
+    "grade": "3",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c4052": {
+    "id": "c4052",
+    "name": "Shepherd Jena",
+    "grade": "3",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c4062": {
+    "id": "c4062",
+    "name": "Muse Rima",
+    "grade": "3",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c4065": {
+    "id": "c4065",
+    "name": "All-Rounder Wanda",
+    "grade": "3",
+    "role": "ranger",
+    "element": "dark"
+  },
+  "c4071": {
+    "id": "c4071",
+    "name": "Zealot Carmainerose",
+    "grade": "3",
+    "role": "mage",
+    "element": "fire"
+  },
+  "c4073": {
+    "id": "c4073",
+    "name": "Doll Maker Pearlhorizon",
+    "grade": "3",
+    "role": "mage",
+    "element": "wind"
+  },
+  "c4103": {
+    "id": "c4103",
+    "name": "Vigilante Leader Glenn",
+    "grade": "3",
+    "role": "ranger",
+    "element": "wind"
+  },
+  "c4105": {
+    "id": "c4105",
+    "name": "Ainos 2.0",
+    "grade": "3",
+    "role": "manauser",
+    "element": "dark"
+  },
+  "c4141": {
+    "id": "c4141",
+    "name": "Holy Flame Adin",
+    "grade": "3",
+    "role": "assassin",
+    "element": "fire"
+  },
+  "c4142": {
+    "id": "c4142",
+    "name": "Serene Purity Adin",
+    "grade": "3",
+    "role": "assassin",
+    "element": "ice"
+  },
+  "c4143": {
+    "id": "c4143",
+    "name": "Verdant Adin",
+    "grade": "3",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c4144": {
+    "id": "c4144",
+    "name": "Savior Adin",
+    "grade": "3",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c5001": {
+    "id": "c5001",
+    "name": "Adventurer Ras",
+    "grade": "3",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c5004": {
+    "id": "c5004",
+    "name": "Archdemon's Shadow",
+    "grade": "5",
+    "role": "mage",
+    "element": "dark"
+  },
+  "c5009": {
+    "id": "c5009",
+    "name": "Summer Break Charlotte",
+    "grade": "5",
+    "role": "knight",
+    "element": "ice"
+  },
+  "c5016": {
+    "id": "c5016",
+    "name": "Holiday Yufine",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
+  "c5024": {
+    "id": "c5024",
+    "name": "Summertime Iseria",
+    "grade": "5",
+    "role": "ranger",
+    "element": "fire"
+  },
+  "c5050": {
+    "id": "c5050",
+    "name": "Fairytale Tenebria",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
+  "c5071": {
+    "id": "c5071",
+    "name": "Seaside Bellona",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
+  "c5082": {
+    "id": "c5082",
+    "name": "Ocean Breeze Luluca",
+    "grade": "5",
+    "role": "manauser",
+    "element": "wind"
+  },
+  "c5089": {
+    "id": "c5089",
+    "name": "Midnight Gala Lilias",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c5149": {
+    "id": "c5149",
+    "name": "Lethe",
+    "grade": "5",
+    "role": "warrior",
+    "element": "ice"
+  },
+  "c6008": {
+    "id": "c6008",
+    "name": "Bad Cat Armin",
+    "grade": "4",
+    "role": "warrior",
+    "element": "dark"
+  },
+  "c6011": {
+    "id": "c6011",
+    "name": "Last Piece Karin",
+    "grade": "4",
+    "role": "assassin",
+    "element": "light"
+  },
+  "c6017": {
+    "id": "c6017",
+    "name": "Infinite Horizon Achates",
+    "grade": "4",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c6037": {
+    "id": "c6037",
+    "name": "Moon Bunny Dominiel",
+    "grade": "4",
+    "role": "manauser",
+    "element": "light"
+  },
+  "c6062": {
+    "id": "c6062",
+    "name": "Angel of Light Angelica",
+    "grade": "4",
+    "role": "mage",
+    "element": "light"
+  }
+}
