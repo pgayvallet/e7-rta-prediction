@@ -45,6 +45,7 @@ class GetBattleListResponseBattleListItem(pydantic.BaseModel):
     # we gonna need to check that later
     teamBettleInfoenemy: str
     teamBettleInfo: str
+    energyGauge: str
 
 
 class GetBattleListResponseResultBody(pydantic.BaseModel):

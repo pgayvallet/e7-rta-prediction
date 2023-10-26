@@ -1,5 +1,5 @@
 import aiohttp
-from .model import GetRecommendListRecommendedList, GetBattleListResponse, HeroList
+from .model import GetRecommendListRecommendedList, GetBattleListResponse, HeroList, ArtefactList
 
 api_base_url = "https://epic7.gg.onstove.com/gameApi"
 static_assets_url = "https://sandbox-static.smilegatemegaport.com"
@@ -35,3 +35,10 @@ async def get_hero_list(session: aiohttp.ClientSession) -> "HeroList":
         response = await request.json()
         parsed = HeroList(**response)
         return parsed
+
+
+async def get_artifact_list(session: aiohttp.ClientSession) -> "ArtefactList":
+    async with session.get(f'{static_assets_url}/gameRecord/epic7/epic7_artifact.json') as request:
+        response = await request.json()
+    parsed = ArtefactList(**response)
+    return parsed

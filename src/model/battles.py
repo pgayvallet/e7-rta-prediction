@@ -1,11 +1,22 @@
 import pydantic
-from typing import Optional
+from typing import Optional, Any
 
 
 class RtaBattleUnit(pydantic.BaseModel):
     id: str
     name: str
 
+
+class RtaBattleUnitDetails(pydantic.BaseModel):
+    id: str
+    name: Optional[str] = None
+    pick_order: int
+    equipped_sets: list[str]
+    artifact_id: str
+    artifact_name: str
+    mvp: bool
+    position: int
+    role: str
 
 class RtaBattle(pydantic.BaseModel):
     schema_version: int
@@ -56,19 +67,37 @@ class RtaBattle(pydantic.BaseModel):
     p2_pick4: Optional[RtaBattleUnit] = None
     p2_pick5: Optional[RtaBattleUnit] = None
 
+    p1_picks_stage1: list[RtaBattleUnit]
+    p1_picks_stage2: list[RtaBattleUnit]
+    p1_picks_stage3: list[RtaBattleUnit]
 
-character_list_mapping = {
-    "type": "nested",
+    p2_picks_stage1: list[RtaBattleUnit]
+    p2_picks_stage2: list[RtaBattleUnit]
+    p2_picks_stage3: list[RtaBattleUnit]
+
+    units_details: list[RtaBattleUnitDetails]
+    initial_cr_position: list[Any]
+
+
+character_mapping = {
     "properties": {
         "id": {"type": "keyword"},
         "name": {"type": "keyword"}
     }
 }
 
-character_mapping = {
+unit_details_mapping = {
+    "type": "nested",
     "properties": {
         "id": {"type": "keyword"},
-        "name": {"type": "keyword"}
+        "name": {"type": "keyword"},
+        "pick_order": {"type": "integer"},
+        "equipped_sets": {"type": "keyword"},
+        "artifact_id": {"type": "keyword"},
+        "artifact_name": {"type": "keyword"},
+        "mvp": {"type": "boolean"},
+        "position": {"type": "integer"},
+        "role": {"type": "keyword"},
     }
 }
 
@@ -96,9 +125,9 @@ rta_battle_mappings = {
         "p1_first_pick": {"type": "boolean"},
         "p2_first_pick": {"type": "boolean"},
         # prebans
-        "prebans": character_list_mapping,
-        "p1_prebans": character_list_mapping,
-        "p2_prebans": character_list_mapping,
+        "prebans": character_mapping,
+        "p1_prebans": character_mapping,
+        "p2_prebans": character_mapping,
         # postban
         "p1_postban": character_mapping,
         "p1_postban_position": {"type": "integer"},
@@ -118,5 +147,20 @@ rta_battle_mappings = {
         "p2_pick3": character_mapping,
         "p2_pick4": character_mapping,
         "p2_pick5": character_mapping,
+        # p1 pick stages
+        "p1_picks_stage1": character_mapping,
+        "p1_picks_stage2": character_mapping,
+        "p1_picks_stage3": character_mapping,
+        # p2 pick stages
+        "p2_picks_stage1": character_mapping,
+        "p2_picks_stage2": character_mapping,
+        "p2_picks_stage3": character_mapping,
+        # unit details
+        "units_details": unit_details_mapping,
+        # stored but unused
+        "initial_cr_position": {
+            "dynamic": False,
+            "properties": {},
+        }
     }
 }

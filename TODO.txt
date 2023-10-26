@@ -2,12 +2,8 @@
 
 - process / ingest initial CR position? (energyGauge)
 
-- more parsing of team battle info ? (sets, equipments, artefact)
-
 - update last_known_rank when fetching user's battles
 
 - filter battles based on both player's rank when ingestion (at least one must be in allowed ranks)
 
 - scan for additional users to add to the queue when parsing one user's battles
-
-- add "per-step" character list

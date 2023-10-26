@@ -1,0 +1,926 @@
+{
+  "efk20": {
+    "id": "efk20",
+    "name": "Broken Will of the Priest"
+  },
+  "ef435": {
+    "id": "ef435",
+    "name": "Our Beautiful Seasons"
+  },
+  "efh19": {
+    "id": "efh19",
+    "name": "Sole Consolation"
+  },
+  "efr24": {
+    "id": "efr24",
+    "name": "An Offer You Can't Refuse"
+  },
+  "ef434": {
+    "id": "ef434",
+    "name": "Cutie Pando"
+  },
+  "efw30": {
+    "id": "efw30",
+    "name": "Benimaru's Tachi"
+  },
+  "efw31": {
+    "id": "efw31",
+    "name": "Golden Rose"
+  },
+  "efa09": {
+    "id": "efa09",
+    "name": "Torn Sleeve"
+  },
+  "efa02": {
+    "id": "efa02",
+    "name": "Wind Rider"
+  },
+  "efh15": {
+    "id": "efh15",
+    "name": "Flawless Garments"
+  },
+  "efm26": {
+    "id": "efm26",
+    "name": "Ignition Cloth Gloves"
+  },
+  "efk03": {
+    "id": "efk03",
+    "name": "Aurius"
+  },
+  "efa19": {
+    "id": "efa19",
+    "name": "Goblet of Oath"
+  },
+  "efw16": {
+    "id": "efw16",
+    "name": "Cradle of Life"
+  },
+  "efm02": {
+    "id": "efm02",
+    "name": "Etica's Scepter"
+  },
+  "ef430": {
+    "id": "ef430",
+    "name": "XIX. The Sun"
+  },
+  "ef421": {
+    "id": "ef421",
+    "name": "The Guardian Star's Blessing"
+  },
+  "ef432": {
+    "id": "ef432",
+    "name": "Prelude to a New Era"
+  },
+  "efa12": {
+    "id": "efa12",
+    "name": "Alabastron"
+  },
+  "ef427": {
+    "id": "ef427",
+    "name": "Nostalgic Music Box"
+  },
+  "efh03": {
+    "id": "efh03",
+    "name": "Water's Origin"
+  },
+  "efm20": {
+    "id": "efm20",
+    "name": "Knowledge Seed"
+  },
+  "efk09": {
+    "id": "efk09",
+    "name": "Bastion of Perlutia"
+  },
+  "ef429": {
+    "id": "ef429",
+    "name": "IV. The Emperor"
+  },
+  "ef322": {
+    "id": "ef322",
+    "name": "Oath Key"
+  },
+  "efm03": {
+    "id": "efm03",
+    "name": "Tagehel's Ancient Book"
+  },
+  "ef431": {
+    "id": "ef431",
+    "name": "VII. The Chariot"
+  },
+  "efm08": {
+    "id": "efm08",
+    "name": "Iela Violin"
+  },
+  "efw04": {
+    "id": "efw04",
+    "name": "Hell Cutter"
+  },
+  "ef203": {
+    "id": "ef203",
+    "name": "Staff of Wisdom"
+  },
+  "efw09": {
+    "id": "efw09",
+    "name": "Creation & Destruction"
+  },
+  "efw08": {
+    "id": "efw08",
+    "name": "Junkyard Dog"
+  },
+  "efm04": {
+    "id": "efm04",
+    "name": "Kal'adra"
+  },
+  "efm21": {
+    "id": "efm21",
+    "name": "Twilight Calamity"
+  },
+  "efk15": {
+    "id": "efk15",
+    "name": "Spear of a New Dawn"
+  },
+  "efa06": {
+    "id": "efa06",
+    "name": "Santa Muerte"
+  },
+  "efk12": {
+    "id": "efk12",
+    "name": "Rise of a Monarch"
+  },
+  "efk17": {
+    "id": "efk17",
+    "name": "Sphere of Sadism"
+  },
+  "ef414": {
+    "id": "ef414",
+    "name": "To a New World"
+  },
+  "ef321": {
+    "id": "ef321",
+    "name": "Forest Totem"
+  },
+  "ef410": {
+    "id": "ef410",
+    "name": "New Year Cookies"
+  },
+  "efh06": {
+    "id": "efh06",
+    "name": "Celestine"
+  },
+  "efm10": {
+    "id": "efm10",
+    "name": "Necro & Undine"
+  },
+  "efa17": {
+    "id": "efa17",
+    "name": "Sword of Summer Twilight"
+  },
+  "efa08": {
+    "id": "efa08",
+    "name": "Violet Talisman"
+  },
+  "ef312": {
+    "id": "ef312",
+    "name": "Devil's Brand"
+  },
+  "efk14": {
+    "id": "efk14",
+    "name": "Ancient Dragon's Legacy"
+  },
+  "ef318": {
+    "id": "ef318",
+    "name": "Butterfly Mandolin"
+  },
+  "ef401": {
+    "id": "ef401",
+    "name": "Card of Small Miracles"
+  },
+  "ef415": {
+    "id": "ef415",
+    "name": "Moonlight's Vestige"
+  },
+  "efh08": {
+    "id": "efh08",
+    "name": "Eternus"
+  },
+  "ef510": {
+    "id": "ef510",
+    "name": "Elbris Ritual Sword"
+  },
+  "efw06": {
+    "id": "efw06",
+    "name": "Uberius's Tooth"
+  },
+  "ef500": {
+    "id": "ef500",
+    "name": "Bottle of Knowledge"
+  },
+  "efk07": {
+    "id": "efk07",
+    "name": "Justice for All"
+  },
+  "ef501": {
+    "id": "ef501",
+    "name": "Proof of Valor"
+  },
+  "efh07": {
+    "id": "efh07",
+    "name": "Idol's Cheer"
+  },
+  "efa04": {
+    "id": "efa04",
+    "name": "Elyha's Knife"
+  },
+  "efw14": {
+    "id": "efw14",
+    "name": "Merciless Glutton"
+  },
+  "efw05": {
+    "id": "efw05",
+    "name": "Strak Gauntlet"
+  },
+  "efr10": {
+    "id": "efr10",
+    "name": "Reingar's Special Drink"
+  },
+  "ef305": {
+    "id": "ef305",
+    "name": "Ranon's Memorandum"
+  },
+  "efk08": {
+    "id": "efk08",
+    "name": "Sword of Ezera"
+  },
+  "ef105": {
+    "id": "ef105",
+    "name": "Venus Orb"
+  },
+  "ef311": {
+    "id": "ef311",
+    "name": "Mighty Yaksha"
+  },
+  "efw29": {
+    "id": "efw29",
+    "name": "Sword of Autumn Eclipse"
+  },
+  "ef402": {
+    "id": "ef402",
+    "name": "Love Potion"
+  },
+  "efm11": {
+    "id": "efm11",
+    "name": "Spirit's Breath"
+  },
+  "efm24": {
+    "id": "efm24",
+    "name": "Upgraded Dragon Knuckles"
+  },
+  "ef513": {
+    "id": "ef513",
+    "name": "Sigurd Scythe"
+  },
+  "efh05": {
+    "id": "efh05",
+    "name": "Magaraha's Tome"
+  },
+  "ef514": {
+    "id": "ef514",
+    "name": "Rod of Amaryllis"
+  },
+  "efr13": {
+    "id": "efr13",
+    "name": "Guiding Light"
+  },
+  "efk13": {
+    "id": "efk13",
+    "name": "Crown of Glory"
+  },
+  "efw24": {
+    "id": "efw24",
+    "name": "Pure White Trust"
+  },
+  "ef418": {
+    "id": "ef418",
+    "name": "XVI. The Tower"
+  },
+  "ef201": {
+    "id": "ef201",
+    "name": "Deadly Sword"
+  },
+  "efa20": {
+    "id": "efa20",
+    "name": "Sword of Cycling Seasons"
+  },
+  "est2f": {
+    "id": "est2f",
+    "name": "Lesser Artifact Charm"
+  },
+  "ef303": {
+    "id": "ef303",
+    "name": "Prophetic Candlestick"
+  },
+  "efa05": {
+    "id": "efa05",
+    "name": "Dust Devil"
+  },
+  "ef307": {
+    "id": "ef307",
+    "name": "Alsacian Spear"
+  },
+  "efw15": {
+    "id": "efw15",
+    "name": "Flower Shower"
+  },
+  "efm22": {
+    "id": "efm22",
+    "name": "Severed Horn Wand"
+  },
+  "ef424": {
+    "id": "ef424",
+    "name": "Records of Unity"
+  },
+  "efa10": {
+    "id": "efa10",
+    "name": "Shepherds of Chaos"
+  },
+  "efk06": {
+    "id": "efk06",
+    "name": "Noble Oath"
+  },
+  "ef206": {
+    "id": "ef206",
+    "name": "Firm Shield"
+  },
+  "ef411": {
+    "id": "ef411",
+    "name": "Golden Cocoa Cookie"
+  },
+  "ef309": {
+    "id": "ef309",
+    "name": "Cursed Compass"
+  },
+  "efm18": {
+    "id": "efm18",
+    "name": "Crimson Moon of Nightmares"
+  },
+  "ef433": {
+    "id": "ef433",
+    "name": "VI. The Lovers"
+  },
+  "ef413": {
+    "id": "ef413",
+    "name": "Super Duper Water Gun Shooter"
+  },
+  "ef301": {
+    "id": "ef301",
+    "name": "Grail of Blood"
+  },
+  "efm25": {
+    "id": "efm25",
+    "name": "Scroll of Shadows"
+  },
+  "efr06": {
+    "id": "efr06",
+    "name": "Otherworldly Machinery"
+  },
+  "efm09": {
+    "id": "efm09",
+    "name": "Radiant Forever"
+  },
+  "efk19": {
+    "id": "efk19",
+    "name": "Rocket Punch Gauntlet"
+  },
+  "efm19": {
+    "id": "efm19",
+    "name": "Fairy Tale for a Nightmare"
+  },
+  "efm13": {
+    "id": "efm13",
+    "name": "Dignus Orb"
+  },
+  "efw03": {
+    "id": "efw03",
+    "name": "El's Fist"
+  },
+  "efw10": {
+    "id": "efw10",
+    "name": "Crimson Seed"
+  },
+  "efa13": {
+    "id": "efa13",
+    "name": "Manica of Control"
+  },
+  "efw25": {
+    "id": "efw25",
+    "name": "Jack-O's Symbol"
+  },
+  "efk05": {
+    "id": "efk05",
+    "name": "Hilag Lance"
+  },
+  "efm06": {
+    "id": "efm06",
+    "name": "Time Matter"
+  },
+  "ef512": {
+    "id": "ef512",
+    "name": "Sashe Ithanes"
+  },
+  "efr15": {
+    "id": "efr15",
+    "name": "Wall of Order"
+  },
+  "ef406": {
+    "id": "ef406",
+    "name": "Midnight Bloom"
+  },
+  "efr07": {
+    "id": "efr07",
+    "name": "Ambrote"
+  },
+  "efr20": {
+    "id": "efr20",
+    "name": "Sharpshooter's Handgun"
+  },
+  "ef316": {
+    "id": "ef316",
+    "name": "Exorcist's Tonfa"
+  },
+  "ef106": {
+    "id": "ef106",
+    "name": "Enhanced Gauntlet"
+  },
+  "efr02": {
+    "id": "efr02",
+    "name": "Song of Stars"
+  },
+  "efk10": {
+    "id": "efk10",
+    "name": "Steadfast Gatekeeper"
+  },
+  "efr19": {
+    "id": "efr19",
+    "name": "Glo-Wings 21"
+  },
+  "efh09": {
+    "id": "efh09",
+    "name": "Stella Harpa"
+  },
+  "ef205": {
+    "id": "ef205",
+    "name": "Bloodbead Dagger"
+  },
+  "efw02": {
+    "id": "efw02",
+    "name": "Durandal"
+  },
+  "efr04": {
+    "id": "efr04",
+    "name": "Sashe Ithanes"
+  },
+  "est6f": {
+    "id": "est6f",
+    "name": "Epic Artifact Charm"
+  },
+  "efw17": {
+    "id": "efw17",
+    "name": "Circus Fantasia"
+  },
+  "efw23": {
+    "id": "efw23",
+    "name": "Anti-Magic Mask"
+  },
+  "ef423": {
+    "id": "ef423",
+    "name": "Official Levulin Beach Volleyball"
+  },
+  "efm28": {
+    "id": "efm28",
+    "name": "Frame of Light"
+  },
+  "ef202": {
+    "id": "ef202",
+    "name": "Elf's Bow"
+  },
+  "ef319": {
+    "id": "ef319",
+    "name": "Envoy's Pipe"
+  },
+  "ef304": {
+    "id": "ef304",
+    "name": "Ancient Sheath"
+  },
+  "ef407": {
+    "id": "ef407",
+    "name": "Spooky Solayu Stories"
+  },
+  "efr12": {
+    "id": "efr12",
+    "name": "Dux Noctis"
+  },
+  "efh16": {
+    "id": "efh16",
+    "name": "Sacred Tree Branch"
+  },
+  "efa16": {
+    "id": "efa16",
+    "name": "Double-Edged Decrescent"
+  },
+  "ef102": {
+    "id": "ef102",
+    "name": "Demon's Pistol"
+  },
+  "ef515": {
+    "id": "ef515",
+    "name": "Sword of Holy Light"
+  },
+  "efa07": {
+    "id": "efa07",
+    "name": "Alexa's Basket"
+  },
+  "efh14": {
+    "id": "efh14",
+    "name": "Guardian Ice Crystals"
+  },
+  "efk01": {
+    "id": "efk01",
+    "name": "Holy Sacrifice"
+  },
+  "efh18": {
+    "id": "efh18",
+    "name": "Fan of Light and Dark"
+  },
+  "efm05": {
+    "id": "efm05",
+    "name": "Sira-Ren"
+  },
+  "efm17": {
+    "id": "efm17",
+    "name": "Last Teatime"
+  },
+  "ef507": {
+    "id": "ef507",
+    "name": "Bastion of Hope"
+  },
+  "efr09": {
+    "id": "efr09",
+    "name": "Sword of Judgment"
+  },
+  "ef204": {
+    "id": "ef204",
+    "name": "Fairy's Grimoire"
+  },
+  "efw18": {
+    "id": "efw18",
+    "name": "Champion's Trophy"
+  },
+  "efr22": {
+    "id": "efr22",
+    "name": "Seal of Capture"
+  },
+  "efa11": {
+    "id": "efa11",
+    "name": "Silver Rain"
+  },
+  "ef317": {
+    "id": "ef317",
+    "name": "Daydream Joker"
+  },
+  "ef405": {
+    "id": "ef405",
+    "name": "One Year of Gratitude"
+  },
+  "efm16": {
+    "id": "efm16",
+    "name": "Black Hand of the Goddess"
+  },
+  "ef416": {
+    "id": "ef416",
+    "name": "Bloodstone"
+  },
+  "efh01": {
+    "id": "efh01",
+    "name": "Rod of Amaryllis"
+  },
+  "efm07": {
+    "id": "efm07",
+    "name": "Chatty"
+  },
+  "efh17": {
+    "id": "efh17",
+    "name": "EXIF Detective (E.d.) Gadget"
+  },
+  "efm15": {
+    "id": "efm15",
+    "name": "Barthez's Orbuculum"
+  },
+  "efr17": {
+    "id": "efr17",
+    "name": "Air-to-Surface Missile: MISHA"
+  },
+  "ef504": {
+    "id": "ef504",
+    "name": "A Symbol of Unity"
+  },
+  "efm12": {
+    "id": "efm12",
+    "name": "Tear of the Desert"
+  },
+  "ef503": {
+    "id": "ef503",
+    "name": "Cruel Mischief"
+  },
+  "efw01": {
+    "id": "efw01",
+    "name": "Sigurd Scythe"
+  },
+  "efw21": {
+    "id": "efw21",
+    "name": "A Little Queen's Huge Crown"
+  },
+  "efr05": {
+    "id": "efr05",
+    "name": "Rosa Hargana"
+  },
+  "ef323": {
+    "id": "ef323",
+    "name": "Ruby Essence"
+  },
+  "efk16": {
+    "id": "efk16",
+    "name": "Wings of Light and Shadow"
+  },
+  "efw19": {
+    "id": "efw19",
+    "name": "Snow Crystal"
+  },
+  "efr21": {
+    "id": "efr21",
+    "name": "Spatiotemporal Fan"
+  },
+  "ef313": {
+    "id": "ef313",
+    "name": "Goblin's Lamp"
+  },
+  "efr03": {
+    "id": "efr03",
+    "name": "Infinity Basket"
+  },
+  "efm01": {
+    "id": "efm01",
+    "name": "Abyssal Crown"
+  },
+  "ef104": {
+    "id": "ef104",
+    "name": "Biting Wind Star"
+  },
+  "ef428": {
+    "id": "ef428",
+    "name": "III. The Empress"
+  },
+  "efr16": {
+    "id": "efr16",
+    "name": "Unseen Observer"
+  },
+  "efh10": {
+    "id": "efh10",
+    "name": "Unfading Memories"
+  },
+  "efk04": {
+    "id": "efk04",
+    "name": "Adamant Shield"
+  },
+  "ef508": {
+    "id": "ef508",
+    "name": "P.O.S"
+  },
+  "efw27": {
+    "id": "efw27",
+    "name": "Spear of Purification"
+  },
+  "efa03": {
+    "id": "efa03",
+    "name": "Moonlight Dreamblade"
+  },
+  "ef505": {
+    "id": "ef505",
+    "name": "War Horn"
+  },
+  "efr08": {
+    "id": "efr08",
+    "name": "Iron Fan"
+  },
+  "ef408": {
+    "id": "ef408",
+    "name": "Blessings of Camaraderie"
+  },
+  "efr23": {
+    "id": "efr23",
+    "name": "Sphere of Inferno"
+  },
+  "ef320": {
+    "id": "ef320",
+    "name": "Timeless Anchor"
+  },
+  "ef419": {
+    "id": "ef419",
+    "name": "XVIII. The Moon"
+  },
+  "efw13": {
+    "id": "efw13",
+    "name": "Alencinox's Wrath"
+  },
+  "efw11": {
+    "id": "efw11",
+    "name": "Draco Plate"
+  },
+  "efa18": {
+    "id": "efa18",
+    "name": "Sword of Winter Shadow"
+  },
+  "ef502": {
+    "id": "ef502",
+    "name": "Victorious Flag"
+  },
+  "ef412": {
+    "id": "ef412",
+    "name": "A Song for Everybody"
+  },
+  "ef506": {
+    "id": "ef506",
+    "name": "Guide to a Decision"
+  },
+  "efr18": {
+    "id": "efr18",
+    "name": "Star of the Deep Sea"
+  },
+  "efk02": {
+    "id": "efk02",
+    "name": "Elbris Ritual Sword"
+  },
+  "efh11": {
+    "id": "efh11",
+    "name": "Touch of Rekos"
+  },
+  "efa14": {
+    "id": "efa14",
+    "name": "Secret Art - Storm Sword"
+  },
+  "ef420": {
+    "id": "ef420",
+    "name": "Days of Destiny"
+  },
+  "ef422": {
+    "id": "ef422",
+    "name": "XIV. Temperance"
+  },
+  "efa15": {
+    "id": "efa15",
+    "name": "Shepherd of the Hollow"
+  },
+  "ef417": {
+    "id": "ef417",
+    "name": "XIII. Death"
+  },
+  "ef306": {
+    "id": "ef306",
+    "name": "Atma's Portal"
+  },
+  "ef314": {
+    "id": "ef314",
+    "name": "Aqua Rose"
+  },
+  "efr01": {
+    "id": "efr01",
+    "name": "Bloodstone"
+  },
+  "efw22": {
+    "id": "efw22",
+    "name": "Azure Comet"
+  },
+  "ef310": {
+    "id": "ef310",
+    "name": "Sword of the Morning"
+  },
+  "efr14": {
+    "id": "efr14",
+    "name": "Ms. Confille"
+  },
+  "ef511": {
+    "id": "ef511",
+    "name": "Tagehel's Ancient Book"
+  },
+  "efk18": {
+    "id": "efk18",
+    "name": "Mature Sunglasses"
+  },
+  "ef302": {
+    "id": "ef302",
+    "name": "Egg of Delusion"
+  },
+  "ef101": {
+    "id": "ef101",
+    "name": "Sword of the Sun"
+  },
+  "ef315": {
+    "id": "ef315",
+    "name": "Ascending Axe"
+  },
+  "efr11": {
+    "id": "efr11",
+    "name": "Andre's Crossbow"
+  },
+  "efm14": {
+    "id": "efm14",
+    "name": "Bloody Rose"
+  },
+  "efh04": {
+    "id": "efh04",
+    "name": "Wondrous Potion Vial"
+  },
+  "est4f": {
+    "id": "est4f",
+    "name": "Greater Artifact Charm"
+  },
+  "ef509": {
+    "id": "ef509",
+    "name": "Rune Sword"
+  },
+  "efw12": {
+    "id": "efw12",
+    "name": "Sepulcrum"
+  },
+  "efa21": {
+    "id": "efa21",
+    "name": "The Armament"
+  },
+  "efh02": {
+    "id": "efh02",
+    "name": "Shimadra Staff"
+  },
+  "ef425": {
+    "id": "ef425",
+    "name": "Blazing Full Moon Trophy"
+  },
+  "efw20": {
+    "id": "efw20",
+    "name": "Samsara Prayer Beads"
+  },
+  "ef103": {
+    "id": "ef103",
+    "name": "Dream Scroll"
+  },
+  "efm23": {
+    "id": "efm23",
+    "name": "Magic for Friends"
+  },
+  "ef409": {
+    "id": "ef409",
+    "name": "Resolute Soldier Series"
+  },
+  "efa01": {
+    "id": "efa01",
+    "name": "Rhianna & Luciella"
+  },
+  "efw28": {
+    "id": "efw28",
+    "name": "Fullmetal's Automail"
+  },
+  "efw26": {
+    "id": "efw26",
+    "name": "Indestructible Gaiters"
+  },
+  "ef426": {
+    "id": "ef426",
+    "name": "Brilliant Confidence"
+  },
+  "efh12": {
+    "id": "efh12",
+    "name": "Doctor's Bag"
+  },
+  "ef403": {
+    "id": "ef403",
+    "name": "Portrait of the Saviors"
+  },
+  "ef308": {
+    "id": "ef308",
+    "name": "Labyrinth Cube"
+  },
+  "efw07": {
+    "id": "efw07",
+    "name": "Border Coin"
+  },
+  "ef404": {
+    "id": "ef404",
+    "name": "Rainbow Scale"
+  },
+  "efa22": {
+    "id": "efa22",
+    "name": "Hostess of the Banquet"
+  },
+  "efw32": {
+    "id": "efw32",
+    "name": "Prayer of Solitude"
+  }
+}
