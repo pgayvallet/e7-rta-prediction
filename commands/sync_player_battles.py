@@ -46,10 +46,10 @@ async def worker(
                     user_id=player.user_id,
                     world_code=player.user_world
                 )
-                battle_list = api_response.result_body.battle_list
+                raw_battle_list = api_response.result_body.battle_list
 
                 battles = list(
-                    map(lambda battle: convert_raw_battle(battle, unit_registry, artefact_registry), battle_list))
+                    map(lambda battle: convert_raw_battle(battle, unit_registry, artefact_registry), raw_battle_list))
                 max_battle_id = max(list(map(lambda battle: battle.battle_id, battles)))
 
                 # filter out battles already ingested
@@ -70,7 +70,7 @@ async def worker(
                 battles = list(filter(filter_battles, battles))
 
                 discovered_players = []
-                for raw_battle in battle_list:
+                for raw_battle in raw_battle_list:
                     opponent_uuid = get_user_uuid(raw_battle.matchPlayerNicknameno, raw_battle.enemy_world_code)
                     opponent_rank = raw_battle.enemy_grade_code
                     if (
@@ -101,8 +101,7 @@ async def worker(
                 if len(battles) > 0:
                     await indexer.insert_battles(battles, season)
 
-                # TODO: this is wrong, can be p1 or p2... need to check
-                last_known_rank = battles[0].p1_grade if len(battles) > 0 else player.last_known_rank
+                last_known_rank = raw_battle_list[0].grade_code if len(raw_battle_list) > 0 else player.last_known_rank
 
                 await indexer.set_player_updated(
                     user_id=player.user_id,
@@ -112,7 +111,10 @@ async def worker(
                     last_updated_battle=max_battle_id,
                     last_known_rank=last_known_rank)
 
-                print(f'updated battles for player {player.user_id} - {len(battles)} battles inserted - {len(discovered_players)} players discovered')
+                print(
+                    f'updated battles for player {player.user_id}'
+                    f' - {len(battles)} battles inserted'
+                    f' - {len(discovered_players)} players discovered')
                 print(f'remaining items in queue: {queue.qsize()}')
             except Exception as e:
                 print(f'error updating user {player.user_id}: {e}')
