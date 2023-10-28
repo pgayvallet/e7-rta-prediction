@@ -4,6 +4,4 @@
 
 - update last_known_rank when fetching user's battles
 
-- filter battles based on both player's rank when ingestion (at least one must be in allowed ranks)
-
 - scan for additional users to add to the queue when parsing one user's battles

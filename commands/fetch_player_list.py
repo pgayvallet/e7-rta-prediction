@@ -13,17 +13,13 @@ class UserInfo(TypedDict):
     user_rank: str
 
 
-allowed_ranks_set = set(ALLOWED_PLAYER_RANKS)
-
-
 async def worker(name: str,
                  queue: asyncio.Queue,
                  user_dict: dict[str, UserInfo],
                  max_count: int):
-
     async def enqueue_user_if_needed(user_id: int, user_name: str, world_code: str, current_rank: str):
         player_id_str = f'{user_id}-{world_code}'
-        if current_rank not in allowed_ranks_set:
+        if current_rank not in ALLOWED_PLAYER_RANKS:
             return
         if user_dict.get(player_id_str) is None:
             # print(f'{name} - adding player {player.nick_no} - {player.world_code}')

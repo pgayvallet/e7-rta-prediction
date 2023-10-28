@@ -1,8 +1,9 @@
 import aiohttp
+import random
 from .model import GetRecommendListRecommendedList, GetBattleListResponse, HeroList, ArtefactList
 
 api_base_url = "https://epic7.gg.onstove.com/gameApi"
-static_assets_url = "https://sandbox-static.smilegatemegaport.com"
+static_assets_url = "https://static.smilegatemegaport.com"
 
 
 # https://sandbox-static.smilegatemegaport.com/gameRecord/epic7/epic7_user_world_global.json
@@ -31,7 +32,8 @@ async def get_battle_list(session: aiohttp.ClientSession, user_id: int, world_co
 
 
 async def get_hero_list(session: aiohttp.ClientSession) -> "HeroList":
-    async with session.get(f'{static_assets_url}/gameRecord/epic7/epic7_hero.json') as request:
+    cache_buster = random.randrange(100000)
+    async with session.get(f'{static_assets_url}/gameRecord/epic7/epic7_hero.json?_={cache_buster}') as request:
         response = await request.json()
         parsed = HeroList(**response)
         return parsed

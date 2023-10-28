@@ -10,6 +10,7 @@ from rta_api import api as rta_api
 from rta_api.model.get_battle_list import GetBattleListResponseBattleListItem
 from src import Indexer, UnitRegistry, ArtefactRegistry
 from src.model import RtaBattle, RtaPlayer
+from src.constants import ALLOWED_PLAYER_RANKS
 
 raw_date_format = "%Y-%m-%d %H:%M:%S.%f"
 
@@ -34,11 +35,18 @@ async def worker(name: str, queue: asyncio.Queue, indexer: Indexer,
                     map(lambda battle: convert_raw_battle(battle, unit_registry, artefact_registry), battle_list))
                 max_battle_id = max(list(map(lambda battle: battle.battle_id, battles)))
 
-                # TODO: filter on allowed ranks
+                def filter_battles(battle: RtaBattle) -> 'bool':
+                    # already processed - skipping
+                    if battle.battle_id <= last_updated_battle:
+                        return False
+                    # only import if at least one player is in the allowed ranks
+                    if battle.p1_grade not in ALLOWED_PLAYER_RANKS and battle.p2_grade not in ALLOWED_PLAYER_RANKS:
+                        return False
+                    return True
 
                 # filter out battles already ingested
                 last_updated_battle = player.last_updated_battle_id or 0
-                battles = list(filter(lambda battle: battle.battle_id > last_updated_battle, battles))
+                battles = list(filter(filter_battles, battles))
 
                 # TODO: also update last_known_rank
 

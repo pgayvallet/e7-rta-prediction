@@ -5,8 +5,12 @@ from rta_api import get_hero_list, get_artifact_list
 
 
 async def sync_static_lists():
+    print("Syncing unit list...")
     await sync_unit_list()
+    print("Syncing artefact list...")
     await sync_artefact_list()
+    print("Done.")
+
 
 async def sync_unit_list():
     async with aiohttp.ClientSession() as session:
@@ -26,7 +30,8 @@ async def sync_unit_list():
 
         heroes = dict(map(map_hero, response.en))
 
-        with open(os.path.join(os.getcwd(), 'data/static/units.json'), "w") as target_file:
+        target_file_path = os.path.join(os.getcwd(), 'data/static/units.json')
+        with open(target_file_path, "w") as target_file:
             target_file.write(json.dumps(heroes, indent=2, ensure_ascii=False))
 
 
@@ -45,5 +50,6 @@ async def sync_artefact_list():
 
         artefacts = dict(map(map_hero, response.en))
 
-        with open(os.path.join(os.getcwd(), 'data/static/artefacts.json'), "w") as target_file:
+        target_file_path = os.path.join(os.getcwd(), 'data/static/artefacts.json')
+        with open(target_file_path, "w") as target_file:
             target_file.write(json.dumps(artefacts, indent=2, ensure_ascii=False))
