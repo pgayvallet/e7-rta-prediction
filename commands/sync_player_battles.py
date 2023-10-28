@@ -4,6 +4,7 @@ import json
 import math
 from datetime import datetime
 import time
+from typing import TypedDict
 import pydantic
 
 from rta_api import api as rta_api
@@ -11,13 +12,29 @@ from rta_api.model.get_battle_list import GetBattleListResponseBattleListItem
 from src import Indexer, UnitRegistry, ArtefactRegistry
 from src.model import RtaBattle, RtaPlayer
 from src.constants import ALLOWED_PLAYER_RANKS
+from src.utils import get_user_uuid
 
 raw_date_format = "%Y-%m-%d %H:%M:%S.%f"
 
 
-async def worker(name: str, queue: asyncio.Queue, indexer: Indexer,
-                 unit_registry: UnitRegistry, artefact_registry: ArtefactRegistry,
-                 season: str):
+# TODO: factorize with fetch_player_list
+class UserInfo(TypedDict):
+    id: int
+    name: str
+    world: str
+    rank: str
+
+
+async def worker(
+        name: str,
+        queue: asyncio.Queue,
+        indexer: Indexer,
+        unit_registry: UnitRegistry,
+        artefact_registry: ArtefactRegistry,
+        season: str,
+        known_player_uuids: set[str],
+        sync_discovered_players: bool,
+):
     async with aiohttp.ClientSession() as session:
         while True:
             # get the player to process from the queue
@@ -35,34 +52,68 @@ async def worker(name: str, queue: asyncio.Queue, indexer: Indexer,
                     map(lambda battle: convert_raw_battle(battle, unit_registry, artefact_registry), battle_list))
                 max_battle_id = max(list(map(lambda battle: battle.battle_id, battles)))
 
+                # filter out battles already ingested
+                last_updated_battle = player.last_updated_battle_id or 0
+
                 def filter_battles(battle: RtaBattle) -> 'bool':
                     # already processed - skipping
                     if battle.battle_id <= last_updated_battle:
+                        return False
+                    # not in correct season - skipping
+                    if battle.season_code != season:
                         return False
                     # only import if at least one player is in the allowed ranks
                     if battle.p1_grade not in ALLOWED_PLAYER_RANKS and battle.p2_grade not in ALLOWED_PLAYER_RANKS:
                         return False
                     return True
 
-                # filter out battles already ingested
-                last_updated_battle = player.last_updated_battle_id or 0
                 battles = list(filter(filter_battles, battles))
 
-                # TODO: also update last_known_rank
+                discovered_players = []
+                for raw_battle in battle_list:
+                    opponent_uuid = get_user_uuid(raw_battle.matchPlayerNicknameno, raw_battle.enemy_world_code)
+                    opponent_rank = raw_battle.enemy_grade_code
+                    if (
+                            opponent_uuid not in known_player_uuids
+                            and opponent_rank in ALLOWED_PLAYER_RANKS
+                            and raw_battle.season_code == season
+                    ):
+                        known_player_uuids.add(opponent_uuid)
+                        discovered_players.append({
+                            "id": raw_battle.matchPlayerNicknameno,
+                            "name": raw_battle.enemy_nick_no,
+                            "world": raw_battle.enemy_world_code,
+                            "rank": raw_battle.enemy_grade_code,
+                        })
 
-                # TODO: scan for additional players to add to the queue
+                if len(discovered_players) > 0:
+                    await indexer.insert_players(discovered_players, season)
+
+                    if sync_discovered_players:
+                        for discovered_player in discovered_players:
+                            await queue.put(RtaPlayer(**{
+                                "user_id": discovered_player['id'],
+                                "user_world": discovered_player['world'],
+                                "user_name": discovered_player['name'],
+                                "last_known_rank": discovered_player['rank'],
+                            }))
 
                 if len(battles) > 0:
                     await indexer.insert_battles(battles, season)
+
+                # TODO: this is wrong, can be p1 or p2... need to check
+                last_known_rank = battles[0].p1_grade if len(battles) > 0 else player.last_known_rank
 
                 await indexer.set_player_updated(
                     user_id=player.user_id,
                     user_world=player.user_world,
                     season=season,
                     date=round(time.time() * 1000),
-                    last_updated_battle=max_battle_id)
+                    last_updated_battle=max_battle_id,
+                    last_known_rank=last_known_rank)
 
-                print(f'updated battles for player {player.user_id} - {len(battles)} battles inserted')
+                print(f'updated battles for player {player.user_id} - {len(battles)} battles inserted - {len(discovered_players)} players discovered')
+                print(f'remaining items in queue: {queue.qsize()}')
             except Exception as e:
                 print(f'error updating user {player.user_id}: {e}')
             finally:
@@ -70,20 +121,35 @@ async def worker(name: str, queue: asyncio.Queue, indexer: Indexer,
                 queue.task_done()
 
 
-async def sync_players_battles(indexer: Indexer,
-                               unit_registry: UnitRegistry,
-                               artefact_registry: ArtefactRegistry,
-                               season: str,
-                               players: list[RtaPlayer],
-                               num_worker: int = 3):
-    queue = asyncio.Queue()
-    for player in players:
+async def sync_players_battles(
+        indexer: Indexer,
+        unit_registry: UnitRegistry,
+        artefact_registry: ArtefactRegistry,
+        players_to_sync: list[RtaPlayer],
+        known_player_uuids: set[str],
+        season: str,
+        sync_discovered_players: bool,
+        num_worker: int = 3
+):
+    queue: asyncio.Queue = asyncio.Queue()
+    for player in players_to_sync:
         queue.put_nowait(player)
 
     # Create the worker tasks to process the queue concurrently.
     tasks = []
     for i in range(num_worker):
-        task = asyncio.create_task(worker(f'worker-{i}', queue, indexer, unit_registry, artefact_registry, season))
+        task = asyncio.create_task(
+            worker(
+                f'worker-{i}',
+                queue,
+                indexer,
+                unit_registry,
+                artefact_registry,
+                season,
+                known_player_uuids,
+                sync_discovered_players
+            )
+        )
         tasks.append(task)
 
     # Wait until the queue is fully processed.

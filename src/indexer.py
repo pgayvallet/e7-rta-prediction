@@ -1,5 +1,6 @@
 from elasticsearch import AsyncElasticsearch, helpers
 from src.model import RtaPlayer, RtaBattle, rta_battle_mappings, rta_player_mappings
+from src.utils import get_user_uuid
 
 
 def player_index(season: str):
@@ -54,7 +55,7 @@ class Indexer:
             for player in players:
                 yield {
                     "_index": index,
-                    "_id": f'{player["id"]}_{player["world"]}',
+                    "_id": get_user_uuid(player["id"], player["world"]),
                     "user_id": player["id"],
                     "user_name": player["name"],
                     "user_world": player["world"],
@@ -63,15 +64,16 @@ class Indexer:
                     "last_updated_battle_id": 0,
                 }
 
-        response = await helpers.async_bulk(self.client, player_generator())
-        print(f'insert_player - {response}')
+        await helpers.async_bulk(self.client, player_generator())
 
-    async def set_player_updated(self, user_id: int, user_world: str, season: str, date: int, last_updated_battle: int):
+    async def set_player_updated(self, user_id: int, user_world: str, season: str, date: int, last_updated_battle: int,
+                                 last_known_rank: str):
         index = player_index(season)
         doc_id = f'{user_id}_{user_world}'
         updated_attributes = {
             "last_update_time": date,
             "last_updated_battle_id": last_updated_battle,
+            "last_known_rank": last_known_rank,
         }
 
         await self.client.update(index=index, id=doc_id, doc=updated_attributes)
@@ -84,5 +86,27 @@ class Indexer:
                 {"last_update_time": {"order": "asc"}}
             ]
         )
+
+        """
+                {
+          "size": 100,
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "term": {"last_known_rank": "legend"} 
+                }
+              ]
+            }
+          }
+        }
+        """
+
         results = response.body['hits']['hits']
         return list(map(lambda r: RtaPlayer(**r["_source"]), results))
+
+    async def get_all_players(self, season: str) -> list[RtaPlayer]:
+        index = player_index(season)
+        scan = helpers.async_scan(client=self.client, index=index)
+        players = [RtaPlayer(**doc["_source"]) async for doc in scan]
+        return players

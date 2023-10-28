@@ -3,7 +3,9 @@ import aiohttp
 import json
 from typing import TypedDict
 from rta_api import api as rta_api
+from src import Indexer
 from src.constants import ALLOWED_PLAYER_RANKS, RANK_LEGEND
+from src.utils import get_user_uuid
 
 
 class UserInfo(TypedDict):
@@ -15,20 +17,27 @@ class UserInfo(TypedDict):
 
 async def worker(name: str,
                  queue: asyncio.Queue,
+                 season: str,
                  user_dict: dict[str, UserInfo],
                  max_count: int):
-    async def enqueue_user_if_needed(user_id: int, user_name: str, world_code: str, current_rank: str):
-        player_id_str = f'{user_id}-{world_code}'
-        if current_rank not in ALLOWED_PLAYER_RANKS:
+    async def enqueue_user_if_needed(
+            user_id: int,
+            user_name: str,
+            world_code: str,
+            current_rank: str,
+            match_season: str,
+    ):
+        player_uuid = get_user_uuid(user_id, world_code)
+        if current_rank not in ALLOWED_PLAYER_RANKS or match_season != season:
             return
-        if user_dict.get(player_id_str) is None:
+        if user_dict.get(player_uuid) is None:
             # print(f'{name} - adding player {player.nick_no} - {player.world_code}')
             await queue.put({
                 "action": "fetch_battle_list",
                 "user_id": user_id,
                 "world_code": world_code
             })
-            user_dict[player_id_str] = {
+            user_dict[player_uuid] = {
                 "user_id": user_id,
                 "user_name": user_name,
                 "world_code": world_code,
@@ -54,7 +63,8 @@ async def worker(name: str,
                         await enqueue_user_if_needed(user_id=player.nick_no,
                                                      user_name=player.nickname,
                                                      world_code=player.world_code,
-                                                     current_rank=RANK_LEGEND)
+                                                     current_rank=RANK_LEGEND,
+                                                     match_season=season)
                 case "fetch_battle_list":
                     response = await rta_api.get_battle_list(session,
                                                              user_id=task["user_id"],
@@ -63,7 +73,8 @@ async def worker(name: str,
                         await enqueue_user_if_needed(user_id=battle.matchPlayerNicknameno,
                                                      user_name=battle.enemy_nick_no,
                                                      world_code=battle.enemy_world_code,
-                                                     current_rank=battle.enemy_grade_code)
+                                                     current_rank=battle.enemy_grade_code,
+                                                     match_season=battle.season_code)
 
             print(f'{name} - task done - total user added: {len(user_dict)}, elements in queue: {queue.qsize()}')
 
@@ -71,10 +82,11 @@ async def worker(name: str,
             queue.task_done()
 
 
-async def fetch_player_list(destination_file: str,
+async def fetch_player_list(indexer: Indexer,
+                            season: str,
                             num_worker: int = 3,
                             initial_recommend_count: int = 5,
-                            max_users: int = 2000) -> 'dict[str, UserInfo]':
+                            max_users: int = 500):
     # Create a queue that we will use to store our "workload".
     queue = asyncio.Queue()
 
@@ -89,7 +101,7 @@ async def fetch_player_list(destination_file: str,
     # Create the worker tasks to process the queue concurrently.
     tasks = []
     for i in range(num_worker):
-        task = asyncio.create_task(worker(f'worker-{i}', queue, user_dict, max_count=max_users))
+        task = asyncio.create_task(worker(f'worker-{i}', queue, season, user_dict, max_count=max_users))
         tasks.append(task)
 
     # Wait until the queue is fully processed.
@@ -101,10 +113,17 @@ async def fetch_player_list(destination_file: str,
     # Wait until all worker tasks are cancelled.
     await asyncio.gather(*tasks, return_exceptions=True)
 
-    print(f'fetched {len(user_dict)} users')
+    def map_player(player):
+        return {
+            "id": player["user_id"],
+            "name": player["user_name"],
+            "world": player["world_code"],
+            "rank": player["user_rank"],
+        }
 
-    user_file = open(destination_file, "w")
-    user_file.write(json.dumps(list(user_dict.values()), indent=2, ensure_ascii=False))
-    user_file.close()
+    await indexer.insert_players(
+        list(map(map_player, user_dict.values())),
+        season
+    )
 
-    return user_dict
+    print(f'inserted {len(user_dict)} users')
