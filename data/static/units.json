@@ -895,6 +895,13 @@
     "role": "ranger",
     "element": "fire"
   },
+  "c1152": {
+    "id": "c1152",
+    "name": "Kane",
+    "grade": "5",
+    "role": "warrior",
+    "element": "fire"
+  },
   "c2002": {
     "id": "c2002",
     "name": "Fallen Cecilia",
@@ -992,6 +999,13 @@
     "grade": "5",
     "role": "mage",
     "element": "light"
+  },
+  "c2016": {
+    "id": "c2016",
+    "name": "Abyssal Yufine",
+    "grade": "5",
+    "role": "knight",
+    "element": "dark"
   },
   "c2017": {
     "id": "c2017",
@@ -1853,6 +1867,27 @@
     "grade": "3",
     "role": "mage",
     "element": "dark"
+  },
+  "c3156": {
+    "id": "c3156",
+    "name": "Claudia",
+    "grade": "3",
+    "role": "knight",
+    "element": "fire"
+  },
+  "c3157": {
+    "id": "c3157",
+    "name": "Ezra",
+    "grade": "3",
+    "role": "assassin",
+    "element": "wind"
+  },
+  "c3158": {
+    "id": "c3158",
+    "name": "Amiki",
+    "grade": "3",
+    "role": "warrior",
+    "element": "ice"
   },
   "c4001": {
     "id": "c4001",

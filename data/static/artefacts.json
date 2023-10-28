@@ -7,9 +7,25 @@
     "id": "ef435",
     "name": "Our Beautiful Seasons"
   },
+  "efa22": {
+    "id": "efa22",
+    "name": "Hostess of the Banquet"
+  },
+  "efw32": {
+    "id": "efw32",
+    "name": "Prayer of Solitude"
+  },
+  "efr25": {
+    "id": "efr25",
+    "name": "Elegiac Candle"
+  },
   "efh19": {
     "id": "efh19",
     "name": "Sole Consolation"
+  },
+  "efw33": {
+    "id": "efw33",
+    "name": "Tyrant's Descent"
   },
   "efr24": {
     "id": "efr24",
@@ -914,13 +930,5 @@
   "ef404": {
     "id": "ef404",
     "name": "Rainbow Scale"
-  },
-  "efa22": {
-    "id": "efa22",
-    "name": "Hostess of the Banquet"
-  },
-  "efw32": {
-    "id": "efw32",
-    "name": "Prayer of Solitude"
   }
 }
