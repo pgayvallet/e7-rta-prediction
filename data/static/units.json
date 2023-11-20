@@ -881,6 +881,13 @@
     "role": "warrior",
     "element": "fire"
   },
+  "c1147": {
+    "id": "c1147",
+    "name": "Fumyr",
+    "grade": "5",
+    "role": "mage",
+    "element": "ice"
+  },
   "c1150": {
     "id": "c1150",
     "name": "Veronica",
