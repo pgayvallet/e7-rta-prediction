@@ -1,32 +1,4 @@
 {
-  "efw33": {
-    "id": "efw33",
-    "name": "Tyrant's Descent"
-  },
-  "efr24": {
-    "id": "efr24",
-    "name": "An Offer You Can't Refuse"
-  },
-  "ef434": {
-    "id": "ef434",
-    "name": "Cutie Pando"
-  },
-  "efw30": {
-    "id": "efw30",
-    "name": "Benimaru's Tachi"
-  },
-  "efw31": {
-    "id": "efw31",
-    "name": "Golden Rose"
-  },
-  "efh19": {
-    "id": "efh19",
-    "name": "Sole Consolation"
-  },
-  "efw32": {
-    "id": "efw32",
-    "name": "Prayer of Solitude"
-  },
   "efa09": {
     "id": "efa09",
     "name": "Torn Sleeve"
@@ -915,9 +887,29 @@
     "id": "ef404",
     "name": "Rainbow Scale"
   },
-  "efr25": {
-    "id": "efr25",
-    "name": "Elegiac Candle"
+  "efw32": {
+    "id": "efw32",
+    "name": "Prayer of Solitude"
+  },
+  "efr24": {
+    "id": "efr24",
+    "name": "An Offer You Can't Refuse"
+  },
+  "ef434": {
+    "id": "ef434",
+    "name": "Cutie Pando"
+  },
+  "efw30": {
+    "id": "efw30",
+    "name": "Benimaru's Tachi"
+  },
+  "efw31": {
+    "id": "efw31",
+    "name": "Golden Rose"
+  },
+  "efr26": {
+    "id": "efr26",
+    "name": "Old Gardening Shears"
   },
   "efk20": {
     "id": "efk20",
@@ -934,5 +926,21 @@
   "efm29": {
     "id": "efm29",
     "name": "Umbral Keystones"
+  },
+  "efa23": {
+    "id": "efa23",
+    "name": "Seductive Flower"
+  },
+  "efr25": {
+    "id": "efr25",
+    "name": "Elegiac Candle"
+  },
+  "efh19": {
+    "id": "efh19",
+    "name": "Sole Consolation"
+  },
+  "efw33": {
+    "id": "efw33",
+    "name": "Tyrant's Descent"
   }
 }

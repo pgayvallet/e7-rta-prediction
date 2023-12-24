@@ -909,6 +909,13 @@
     "role": "warrior",
     "element": "fire"
   },
+  "c1154": {
+    "id": "c1154",
+    "name": "Byblis",
+    "grade": "5",
+    "role": "ranger",
+    "element": "ice"
+  },
   "c2002": {
     "id": "c2002",
     "name": "Fallen Cecilia",
@@ -1223,6 +1230,13 @@
     "grade": "4",
     "role": "assassin",
     "element": "light"
+  },
+  "c2069": {
+    "id": "c2069",
+    "name": "Eternal Wanderer Ludwig",
+    "grade": "5",
+    "role": "mage",
+    "element": "dark"
   },
   "c2070": {
     "id": "c2070",
@@ -2043,6 +2057,13 @@
     "role": "manauser",
     "element": "dark"
   },
+  "c4123": {
+    "id": "c4123",
+    "name": "Silvertide Christy",
+    "grade": "3",
+    "role": "knight",
+    "element": "wind"
+  },
   "c4141": {
     "id": "c4141",
     "name": "Holy Flame Adin",
@@ -2105,6 +2126,13 @@
     "grade": "5",
     "role": "ranger",
     "element": "fire"
+  },
+  "c5046": {
+    "id": "c5046",
+    "name": "Blooming Lidica",
+    "grade": "5",
+    "role": "assassin",
+    "element": "wind"
   },
   "c5050": {
     "id": "c5050",
